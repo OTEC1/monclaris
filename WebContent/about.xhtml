@@ -1,0 +1,634 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	 xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+<title>About Us </title>
+        
+        
+         <link  rel="stylesheet"  href="https://unpkg.com/aos@next/dist/aos.css" />
+          <script  src="https://unpkg.com/aos@next/dist/aos.js"/>
+          <script    type="text/javascript"    src="folder1/jquery-1.8.3.js"/>
+       
+       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+		<style>
+		
+		
+				*{
+				margin: 0px;
+				padding: 0px;
+				background: #EAEAEA;
+				
+				}
+				
+				
+				.base{
+					height:1120px;
+					width:80%;
+					margin-left: auto;
+					margin-right: auto;
+					background: #fff;
+					
+					}
+				
+	            .top_nav1{
+       		    position:fixed;
+       		      background:#fff;
+                height: 100px;
+                width: 100%;
+                margin-top:-100px;
+               
+                box-shadow: 0px 20px 30px  rgba(0,0,0,0.2);
+            }
+            
+		            
+	     	.about_us_back{
+					width:100%;
+					height:1000px;
+					margin-top:100px;
+					background: #D6D6D6;
+					
+				}
+				
+				.about_us_write_up{	
+					width:98%;
+					height:1195px;
+					margin-top:10px;
+					background: #fff;
+				}
+				
+				.about_us{
+				 float: left;  
+				 height: 310px;
+				 width: 50%;
+				 margin:20px;
+				  padding:10px;
+				  background:#FFF;
+				 box-shadow: 0px 20px 30px  rgba(0,0,0,0.2);
+				}
+				
+				
+				
+				.mission_statement{
+				 float: right;  
+				 height: 150px;
+				 width: 50%;
+				 margin:20px;
+				  padding:10px;
+				  background:#FFF;
+				 box-shadow: 0px 20px 30px rgba(0,0,0,0.2);
+				}
+				
+				
+				.vision_statement{
+				float: left;  
+				 height: 150px;
+				 width: 50%;
+				  padding:10px;
+				 margin:20px;
+				 background:#FFF;
+				  box-shadow: 0px 20px 30px rgba(0,0,0,0.2);
+				}
+				
+				.core_values{  
+				float: right;  
+				 height: 250px;
+				 width: 96%;
+				 margin:20px;
+				  padding:10px;
+				  background:#FFF;
+				 box-shadow: 0px 20px 30px rgba(0,0,0,0.2);
+				}
+				
+				
+			
+				.core{
+				width: 90%; 
+				}
+				
+				.wat_icons{
+				width: 50px; 
+				}
+			
+			
+			   .wmg{
+			   margin-top:5px;
+                height: 25px;
+                width: 25px;
+                margin: 5px;
+            }
+            
+             .cls{
+              position: absolute;
+                width: 90%;
+                height: 82px;
+                margin-top: -90px;
+                margin-left: 300px;
+                background: #fff;
+                 }
+            
+             .smooth{
+             	float:right;
+				display: none;
+				width: 100%;
+				height: 130px;
+				margin-top: 50px;
+				background: #fff;
+            }
+            
+                  .box{
+                  float: left;
+                  margin: 10px;
+                  font-size: 20px;
+                  color: #BD8D30;
+                  height: 80px;
+                  width: 18%;
+                  background: #fff;
+                  border:#fff;
+                  font-family: sans-serif;
+                   cursor:pointer;
+              }
+            
+                .reg{
+                float: right;
+                width: 70px;
+                height: 30px;
+              	margin:10px;
+                border: none;
+                background-color: #54C8EF;
+                border-radius: 5px;
+                margin-top: 6px;
+                color: #fff;
+                cursor: pointer;
+                
+            }
+            
+                   .sign{
+                  float: right;
+                  margin-right:-60px;
+                  padding: 5px;
+                  margin-top: 45px;
+                  background: #fff;
+                   cursor: pointer;
+               }
+                   
+            
+                      
+      		    .logo{
+                    height: 90px;
+                    margin-left: 10px;
+                   }
+                   
+                   
+                .last_bottom1{
+                width: 100%; 
+                height: 250px; 
+                margin-top: 1px;
+               display: inline-block;
+             background-color: #003481;
+             color: #fff;
+                 }
+            
+             .hand_bugger{
+			                display: none;
+			            }
+			            
+			       .siz{
+			       		float:left;
+			       		width: 300px;
+			       		height: 200px;
+			       	}
+            
+            
+            	     .sign_in_zone{
+		                width:16%;
+		                height: 100px;
+		                float: right;
+		                background: #fff;
+		            }
+		            
+		            .paper, .ep{
+		            	background: #fff;
+		            }
+		            
+		            ul li{
+		            	background: #fff;
+		            }
+            
+               @media(max-width:1200px){
+            	
+            		*{
+			          	margin: 0px;
+			           	padding: 0px;
+			            }
+			            
+			           	.base{
+					height:1400px;
+					width:100%;
+					margin-left: auto;
+					margin-right: auto;
+					background: #fff;
+					
+					}
+					
+			            
+			   .last_bottom1{
+                width: 100%; 
+                height: 820px; 
+                margin-top: 1px;
+               display: inline-block;
+               background-color: #003481;
+                 }
+                 
+                 
+            				
+          	     span{
+		                display: block;
+		                background-color: #000;
+		                width:  50px;
+		                height: 8px;
+		                margin: 10px;
+		                border-radius: 5px;
+		            }
+				            
+				            
+          		     .hand_bugger{
+          		     	display:block;
+	                width:8%;
+	                height: 100px;
+	                float: left;
+	                background: #fff;
+	            }
+            	
+            	
+            	    .logo{
+                    
+                    margin-left: 5%;
+                   }
+                 
+                  .cls{
+           	     	display: none;
+              	  }
+          				 
+          				            
+				
+				.about_us_write_up{	
+					width:98%;
+					height:1900px;
+					margin-top:10px;
+					background: #fff;
+				}
+				
+				.about_us{
+				 float: left;  
+				 height: 410px;
+				 width: 50%;
+				 margin:20px;
+				  border-color: #4ACEFF;
+				  font-size:20px;
+				  font-family:sans-serif;
+				
+			
+				}
+				
+				
+				
+				.mission_statement{
+				 float: right;  
+				 height: 250px;
+				 width: 50%;
+				 margin:20px;
+				 font-size:20px;
+				  font-family:sans-serif;
+				
+				}
+				
+				
+				.vision_statement{
+				
+				float: left;  
+				 height: 150px;
+				 width: 50%;
+				 margin:20px;
+				 font-size:20px;
+				  font-family:sans-serif;
+				
+				}
+				
+				.core_values{  
+				float: right;  
+				 height: 350px;
+				 width: 96%;
+				 margin:20px;
+				 font-size:20px;
+				  font-family:sans-serif;
+				  
+				}
+				
+				.core{
+				width: 90%; 
+				}
+          			
+          			
+       	  .siz{
+       		float:left;
+       		width: 100%;
+       		height: 200px;
+          	}	  
+          	
+          			.top_nav1{
+       		    position:fixed;
+       		      background:#fff;
+                height: 100px;
+                width: 100%;
+                margin-top:-26px;
+                box-shadow: 0px 20px 30px  rgba(0,0,0,0.2);
+            }
+          	
+       
+       	     ul li{
+		            	background: #fff;
+		            	margin-left: 5px;
+		            }
+            
+             
+            	}
+            	
+            	
+            @media(max-width:980px){
+            	
+      			*{
+      					margin: 0px;
+      					padding: 0px;
+      				}
+      				   
+      			.base{
+					height:1700px;
+					width:100%;
+					margin-left: auto;
+					margin-right: auto;
+					background: #fff;
+					
+					}
+            				
+         	    span{
+	                display: block;
+	                background-color: #000;
+	                width:  50px;
+	                height: 8px;
+	                margin: 10px;
+	                border-radius: 5px;
+				      }
+            
+            
+              			.top_nav1{
+       		    position:fixed;
+       		      background:#fff;
+                height: 100px;
+                width: 100%;
+                margin-top:-28px;
+                box-shadow: 0px 20px 30px  rgba(0,0,0,0.2);
+            }
+          	
+          	
+             .hand_bugger{
+        		   	display:block;
+               width:8%;
+               height: 100px;
+               float: left;
+               background: #fff;
+           }
+        	
+        	    .logo{
+                  
+                  margin-left: 25%;
+                  margin-top: 10px;
+                 }
+                 
+              .cls{
+   				display: none;
+				  }
+        				  
+        				
+         	ul li{
+         		margin: 20px;
+         		background: #fff;
+         	}
+          		
+          		
+          	.about_us{
+				 margin-left:auto;
+				 margin-right:auto;
+				padding:2px;
+				height:450px;
+				font-family:sans-serif;
+				font-size:1em;
+				 width: 90%;
+				  padding:10px;
+		
+				}
+					
+					
+			.mission_statement{
+				  margin-left:auto;
+				 margin-right:auto;  
+				 height: 250px;
+				 font-size:1em;
+				 width: 90%;
+				 padding:10px;
+				 align-content:center;
+				 font-family:sans-serif;
+				
+				}
+				
+				
+				.vision_statement{
+				
+				 margin-left:auto;
+				 margin-right:auto; 
+				 height: 150px;
+				 font-size:1em;
+				 width: 80%;
+				 margin:10px;
+				  padding:10px;
+			     font-family:sans-serif;
+			    
+				}
+				ul{
+				background: #fff;
+				}
+				
+				.core_values{  
+				margin-left:auto;
+				 margin-right:auto;  
+				 height: 500px;
+				 font-size:1em;
+				 width: 90%;
+				 padding-bottom:20px;
+				 padding:10px;
+				  font-family:sans-serif;
+				  border-color: #76D6F6;
+				  
+				 
+				}	  
+          				  
+            	}
+		</style>
+
+</h:head>
+
+
+
+
+<h:body>
+      <!--about Us-->
+        
+        <h:form>
+        
+        
+        <p:growl  showDetail="true" />
+        
+            <div   class="top_nav1">
+                
+                
+                <div    class="smooth"   > 
+                <br/><br/> 
+                <h:commandButton  class="box" value="Laundry"   action="#{nav.nav2()}" >
+                <f:param  name="n1"  value=""/>
+                </h:commandButton>
+                <h:commandButton  class="box"  value="Tutor's"   action="#{nav.nav1()}"  />
+                <h:commandButton   class="box"  value="Logistics"   action="#{nav.nav4()}"   />
+               </div>
+            
+            
+                    
+                    <h:commandButton image="Images/cons.png" alt=""   class="logo"   action="#{nav.nav4}"/>
+                    
+                    
+                    <div  class="cls">
+                  	  <h:commandButton  class="box" value="Laundry"   action="#{nav.nav2()}" >
+                  	  <f:param  name="n1"  value=""/>
+                  	  </h:commandButton>
+                     <h:commandButton  class="box"  value="Tutor's"   action="#{nav.nav1()}"  />
+                    <h:commandButton   class="box"  value="Logistics"   action="#{nav.nav4()}"   />
+         
+                </div>
+                    
+                    
+                </div>
+                
+            <div   class="base">
+                
+            
+               
+                
+                
+              <!--frame's-->
+                
+                <div class="about_us_back">
+                <center>
+                <div  class="about_us_write_up">
+                <div  class="about_us">
+                <br/>
+                 <p:outputLabel  class="paper"  value="About Us"/>
+                 <br/><br/>
+                 <div   class="ep">
+                 <p:outputLabel class="ep"  value="Monclaris Nigeria Limited was established in the year 2011 and started operation in the year 2016.  
+                 							The  Company deals with various aspects of  service which include: LOGISTICS, BUILDING CONSTRUCTION, LAUDRY SERVICE, as well as  I.T (Information Technologies).
+                 						       	At Monclaris we provide efficent and quality service to all our customer, at a very afforable cost we believe that none of us
+                 							is as smart as all of us, that why we emphasize on team work which guarantes productivity."/>
+               </div>
+               </div>
+               
+               <div  class="mission_statement">
+               <br/>
+                 <p:outputLabel  class="paper"   value="Mission Statement"/>
+                 <br/><br/>
+                  <div   class="ep">
+                 <p:outputLabel   class="paper"   value="At Monclaris we provide innovative methods
+                  and ideas to improve the quality of life by encouraging  innovation and creativity  which makes life easier."/>
+                  </div>
+               </div>
+               
+               
+               <div  class="vision_statement">
+              
+                  <br/>
+                 <p:outputLabel class="paper"   value="Vision Statement"/>
+                 
+                  <br/> <br/>
+                  <div   class="ep">
+                  <p:outputLabel   class="paper"  value="We transform the world by being creative."/>
+                  </div>
+               </div>
+               
+               
+              
+               <div  class="core_values">
+               <br/>
+                 <p:outputLabel  class="paper"    value="Core Values"/>
+                 <br/> <br/> <br/>
+                  <div   class="core">
+                 <ul  >
+                 
+                 <li>
+                 <p:outputLabel class="paper"   value="Passion :- We love what we do."/>
+                 </li>
+                 
+                 <li>
+                 <p:outputLabel class="paper"   value="Integrity : - We keep to Our word."/>
+                  </li>
+                 <li>
+                 
+                 <p:outputLabel  class="paper"  value="Quality : - We provide quality service that delivers premium values to our clients."/>
+                
+                 </li>
+                 
+                 <li>
+                 <p:outputLabel  class="paper"   value="Customer commitment :- We develop a relationship with our Customers that leaves them with a positive experience."/>
+                 </li>
+                 
+                 <li>
+                 
+                   <p:outputLabel  class="paper"   value="Teamwork :- Our product is dependent on our collective  energy and innovative ideas of our Team  member's."/>
+               
+                 </li>
+                 </ul>
+                 </div>
+               </div>
+             
+               
+               
+                </div>
+                </center>
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                 
+                   
+                                 
+                          
+                     </div>                
+                                                   
+                          <ui:include src="bottoms.xhtml"/>
+                                         
+                                                   
+                
+       
+            </h:form>
+
+
+</h:body>
+</html>

@@ -1,0 +1,639 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+
+
+<title>
+Monclaris Tutor's 
+</title>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+ <meta name="robots" content="index, follow" />
+    <meta name="description" content="logistics, Tutoring, laundry, Construction"/>
+ <script src="https://kit.fontawesome.com/yourcode.js"/>  
+
+	<!--Sweet alert-->
+	<script type="text/javascript" src="folder1/bootstrap.js" />
+	<script type="text/javascript" src="folder1/bootstrap.min.js" />
+	<script src="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.css" />
+
+<style>
+
+
+		*{
+			margin: 0px;
+			padding: 0px;
+			background: #E4E4E4;
+			}
+			
+			
+			
+			.base{
+			
+					width: 75%;
+					margin-left:auto;
+					margin-right:auto;
+					background: #fff;
+					height: auto;
+					
+				}
+				
+				
+				.home{
+						font-family: sans-serif;
+						text-decoration:none;
+						color: #10059E;
+						font-size: 1em;
+						margin:10px;
+						background: #000;
+						display: inline-block;
+						color:#fff;
+						font-family: sans-serif;
+					
+						}
+				
+
+			.boz{
+					width: 100%;
+					height: 140px;
+				     background: navy;
+			
+			}
+			
+			
+					.xms{
+					width: 100%;
+					 height: 30px; 
+					 background: #000;
+				}
+				
+			.top_logo{
+					width: 200px;
+					height: 80px;
+					background: none;
+				
+				}
+			
+			
+			
+			.vid-list{
+			       width: 100%;
+					height: 680px;
+					margin-top: 30px;
+					background: #fff;
+				   border-radius: 	0px 0px 15px 15px;
+					
+			
+			}
+
+            
+            .force-overflow{
+            min-height: 600px;
+              background: #fff;
+            }
+            
+            
+            .scrollbar{ 
+             overflow: scroll;
+             float:left;
+             height:330px;
+             width:71%;
+             overflow-y:scroll;
+             overflow-x:hidden;
+             background: #fff;
+             
+            }
+            
+            
+            	.player{
+						width: 70%;
+						height: 410px;
+						background: blue;
+						margin-top: 15px;
+					}
+            
+         
+            #style-1::-webkit-scrollbar{
+            width: 7px;
+          
+            
+            }
+        
+          #style-1::-webkit-scrollbar-thumb{
+         	 background:none;
+            border-radius: 5px;
+            margin-right: 10px;
+            }
+            
+            
+         
+            .ads1{
+            		float: right;
+            		height: 750px;
+            		width: 29%;
+            		background: #fff;
+            		margin-top: -420px;
+            		text-align: center;
+        
+            
+            	}
+            	
+            		.swq{
+						font-family: sans-serif;
+						background: #fff;
+						border: 2px solid #000;
+						padding: 3px;
+						border-radius: 3px;
+					
+					
+					}
+           
+            	
+            	.ad2{
+            	
+            		display: none;
+            			
+            		}
+            
+            h3{
+            font-family: sans-serif;
+            font-weight: 600;
+            color: #070B7B;
+            background: #fff;
+            padding: 10px;
+            margin-top: 70px;
+            }
+            
+            
+            .ems{
+            		
+            	box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.3);  
+		        height: 150px; 
+		        width: 80%;
+		        background: #fff;
+		        margin: 20px;
+            	
+            		}
+            		
+            		
+            		
+            .bts{
+            	background: #fff;
+            }
+            
+              .bts1{
+            	background: #fff;
+            	overflow: hidden;
+            	font-family: sans-serif;
+            	width: 50px;
+            	margin: 10px;
+            }
+            
+            
+            .nod{
+            			text-decoration: none;
+            			font-family: sans-serif;
+            	}
+            	
+            	.imgs{
+            			border-radius:200px;
+            			float: left;
+            			margin-top:10px;
+            			margin-left:50px;
+            			width:100px;
+            		  height:100px;
+            		
+            		}
+            		
+            		
+             	.imgs1{
+            			border-radius:200px;
+            			float: right;
+            			margin-top:10px;
+            			margin-right:50px;
+            			width:60px;
+            		    height:60px;
+            		}
+            		
+           		.a1{
+					font-family: sans-serif;
+					text-decoration:none;
+					color: blue;
+					font-size: 1em;
+					margin: 20px;
+					background: #fff;
+					top: 10px;
+					}
+			
+			
+		   	.submit{
+				 border:none;
+				 color:#fff;
+				 border-radius: 5px;
+				 padding:5px;
+				 cursor: pointer;
+				 float: right;
+				 background: #5ADE0F;
+				}
+				
+            		
+            		.top{
+					height: 50px;
+					width: 90%;
+					background: #fff;
+					margin-left: auto;
+	 		    	margin-right: auto;
+	 		    	box-shadow: 0px 20px 30px rgba(0,0,0,0.2);
+	 		    	border-radius: 0px 0px 0px 20px;
+	 		    	float: right;
+				}
+				
+				.cinput{
+						border:none;
+						padding: 4px;
+						border-radius: 4px;
+						margin-right: 15px;
+					}
+					
+					
+					.fa-search{
+					color: #323247;
+					}
+				
+				.footer{
+						width: 100%;
+						 height: 30px; 
+						 background: #000; 
+						 margin-top: 120px;
+						 height: auto;
+						 background: #000;
+					}
+					
+						h4{
+						display: none;
+						
+					}
+					
+					
+					.navs{
+					background: #fff;
+					 margin-left: 20px; 
+					}
+					
+				
+			
+					
+				@media(max-width:1000px){
+				
+				
+						.base{
+							width: 100%;
+							margin-left:auto;
+							margin-right:auto;
+							background: #fff;
+							height: auto;
+							
+						}
+				
+				
+				
+						   	.top{
+					    	height: 130px;
+							width: 90%;
+						}
+						
+						
+						           
+			            h3{
+			            width:250px;
+			            font-family: sans-serif;
+			            font-weight: 600;
+			            color: #070B7B;
+			            background: #fff;
+			            padding: 12px;
+			            margin-top: 90px;
+			            margin-left: auto;
+			            margin-right: auto;
+			            }
+			            
+			            	.xms{
+						width: 100%;
+						 height: 30px; 
+						 background: #000;
+					}
+				
+			            
+			            	h4{
+						display: block;
+						background: #fff;
+						
+					}
+					
+					.footer{
+						width: 100%;
+						height: auto;
+						 background: #000;
+						
+						 }
+						 
+				
+				}		
+			
+          	@media(max-width:780px){
+            		
+            	.base{
+					width: 100%;
+					margin-left:auto;
+					margin-right:auto;
+					background: #fff;
+					height: auto;
+					
+				}
+				
+				
+				  .navs{
+					background: #fff;
+					 margin-left: 0px; 
+					}
+					
+					
+						.a1{
+					font-family: sans-serif;
+					text-decoration:none;
+					color: blue;
+					font-size: 1em;
+					margin: 10px;
+					background: #fff;
+					top: 10px;
+					}
+            		
+               .ems{
+            	box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.3);  
+		        height: 200px; 
+		        width: 98%;
+		        background: #fff;
+		        margin: 10px;
+		        font-family: sans-serif;
+            	
+            		}
+            		
+            		.player{
+						width: 99%;
+						height: 400px;
+						background: blue;
+						
+					}
+        
+            	
+            	  	.top{
+					height: 140px;
+					width: 100%;
+					background: #fff;
+	 		    	border-radius: 0px 0px 0px 0px;
+				}
+					
+
+					input{
+						border:none;
+						width:120px;
+						margin-top:10px;
+						padding: 4px;
+						border-radius: 4px;
+						margin-right: 5px;
+					}
+				
+						
+					.home{
+						font-family: sans-serif;
+						text-decoration:none;
+						color: #10059E;
+						font-size: 1em;
+						margin:10px;
+						background: #000;
+						display: inline-block;
+						color:#fff;
+						font-family: sans-serif;
+						
+					
+						}
+            		
+            		
+            	   	.submit{
+						 border:none;
+						 color:#fff;
+						 width:55px;
+						 padding:5px;
+						 border-radius: 5px;
+						 margin-right:20px;
+						 cursor: pointer;
+						 float: right;
+						}
+						
+						
+				  	.imgs1{
+            	
+            			border-radius:200px;
+            			float: right;
+            			margin-top:-150px;
+            			margin-right:10px;
+            			width:30px;
+            		    height:30px;
+            		
+            		}         
+                		
+	      		  	.imgs{
+	      		  	border-radius:200px;
+	      			float: left;
+	      			margin-top:8px;
+	      			margin-left:10px;
+	      		  	width:70px;
+	      		    height:70px;
+	      		}
+	      		
+	      		
+	      		       .bts1{
+		            	background: #fff;
+		            	overflow: hidden;
+		            	font-family: sans-serif;
+		            	width: 90%;
+		            	float: left;
+		            }
+	            
+	              .scrollbar{ 
+        				 width:100%;
+        				 height:525px;
+        				 margin-top: -130px;
+      				  }
+            
+            	
+            	.ads2{
+            		display: block;
+           			width: 100%;
+           			height: 150px;
+           			margin-top:130px;
+           			margin-bottom:10px;
+           			background: #fff;
+            	
+            	}
+            	
+            	  .ads1{
+            		float: left;
+            		height: 500px;
+            		width: 100%;
+            		background: #fff;
+            		margin-top: 20px;
+            		text-align: center;
+            		margin-bottom: 20px;
+        
+            
+            	}
+
+            	
+    				h4{
+						display: block;
+						background: #fff;
+						
+					}
+            	
+            		.footer{
+						width: 100%;
+						height: auto;
+						 background: #000;
+						  margin-top: 800px;
+					}
+            		}
+</style>
+
+</h:head>
+
+<h:body>
+
+<script>
+document.write("<iframe src='Adsense.html'>");
+document.write("</iframe>");
+</script>
+<h:form>
+	
+				<div   class="base">
+				
+					<div    class="boz">
+					<div   class="xms">
+				<a href="index.xhtml"   class="home">Monclaris Tutors</a>
+					</div>
+				  
+				</div>
+				
+					
+				<div    class="top">
+				
+							<table   class="navs">
+									<tr  style="background: #fff;">
+										<td  style="background: #fff;">
+										<br/>
+											
+											<h:commandLink  class="a1"  value="Networking"/> 
+											<h:commandLink  class="a1"  value="Python"/> 
+											<h:commandLink  class="a1"  value="Java"/> 
+											<h:commandLink  class="a1"  value="React"/> 
+											<h:commandLink  class="a1"  value="Spring Bot"/> 
+											
+											<h:inputText      class="cinput"    value="#{navigation.searchs}">
+											<f:passThroughAttribute name="placeholder"  value="Search"/>
+											</h:inputText>
+											  <h:commandButton   class="submit"    value="Search"   action="#{navigation.query_db_vid}"/>
+										</td>
+									</tr>
+							</table>
+							
+				</div>
+	
+	
+		
+		
+		<div    class="vid-list">
+		
+		
+		
+		
+		<div   class="ads2">
+			
+		</div>
+		
+		
+		
+	
+		<iframe  src="video.jsp"   class="player"   scrolling="no"/>
+		
+		
+		
+		    <div class="scrollbar"  id="style-1">
+                        <div class="force-overflow">
+			
+			
+			
+			
+						<ui:repeat var="nx"      value="#{navigation.list1}">
+						<h:commandLink    class="nod"     action="#{navigation.nav_one}">
+								<center class="bts">
+										<div   class="ems">
+											
+													<h:inputHidden  class="bts"   value="#{nx.id}"/>
+														<h:inputHidden     value="#{nx.current}"/>
+														
+													<p:graphicImage   value="#{navigation.stream}"    class="imgs"    cache="false"    alt="#{nx.title}">
+													   <f:param  name="pas"     value="#{nx.paths}" />
+													</p:graphicImage>
+												
+													<h:inputHidden  class="bts"   value="#{nx.paths}"/>
+													
+													<br/>	<br/> 
+													<h:outputLabel  class="bts1"   value=" Title:  #{nx.title}"/>
+													 
+													<h:outputLabel   class="bts1"  value="Now Playing   Click to View"/>
+		
+										           <img   src="images/Video_start.png"    class="imgs1"  />
+												
+										</div>
+								    </center>
+								   
+								     <f:param name="w1"    value="#{nx.paths}"/>
+									<f:param name="w2"      value="#{nx.current}"/>
+									<f:param name="w3"    value="#{nx.title}"/>
+						           </h:commandLink>
+						
+								
+						</ui:repeat>
+			   </div>
+	    	</div>
+	    	
+	    	
+	    	
+	    			<div  class="ads1">
+					<b>	<h:outputLabel  class="swq"    value="Q &amp; A Forum "/></b>
+			      </div>
+			    
+			
+		</div>
+		
+
+		</div>
+   
+     <div   class="footer">
+				<ui:include src="bottoms.xhtml"/>
+		</div>
+
+
+</h:form>
+</h:body>
+
+
+</html>

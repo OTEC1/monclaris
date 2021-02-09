@@ -1,0 +1,537 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+
+<title>
+Dealit Trending Video's
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="robots" content="index, follow" />
+    <meta name="description" content="Live style, music, videos, news, Gist"/>
+  
+
+  
+
+<style>
+
+
+		*{
+			margin: 0px;
+			padding: 0px;
+			background: #E4E4E4;
+			}
+			
+			
+		
+			.base{
+			
+					width: 75%;
+					margin-left:auto;
+					margin-right:auto;
+					
+				}
+
+			.boz{
+					width: 100%;
+					height: 140px;
+				     background-image: url("images/blog3.png");
+		             background-repeat: no-repeat;
+		             background-size: cover;
+			
+			}
+			
+			
+					.xms{
+					width: 100%;
+					 height: 20px; 
+					 background: #000;
+				}
+				
+			.top_logo{
+					width: 200px;
+					height: 80px;
+					background: none;
+				
+				}
+			
+			
+			
+			.vid-list{
+			       width: 100%;
+					height: 680px;
+					margin-top: 30px;
+					background: #fff;
+				   border-radius: 	0px 0px 15px 15px;
+					
+			
+			}
+
+            
+            .force-overflow{
+            min-height: 600px;
+              background: #fff;
+            }
+            
+            
+            .scrollbar{ 
+             overflow: scroll;
+             float:left;
+             height:600px;
+             width:70%;
+             overflow-y:scroll;
+             overflow-x:hidden;
+             background: #fff;
+             
+            }
+            
+         
+            #style-1::-webkit-scrollbar{
+            width: 7px;
+          
+            
+            }
+        
+          #style-1::-webkit-scrollbar-thumb{
+            background:none;
+            border-radius: 5px;
+            margin-right: 10px;
+            }
+            
+            
+           	.ads{
+					display: none;
+					}
+            
+            .ads1{
+            		float: right;
+            		height: 610px;
+            		width: 29%;
+            		background: #fff;
+            
+            	}
+            	
+            	.ad2{          	
+            		display: none;
+            			
+            		}
+            
+            h3{
+            font-family: sans-serif;
+            font-weight: 600;
+            color: #070B7B;
+            background: #fff;
+            padding: 10px;
+            margin-top: 70px;
+            }
+            
+            
+            .ems{
+            		
+            	box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.3);  
+		        height: 150px; 
+		        width: 80%;
+		        background: #fff;
+		        margin: 20px;
+            	
+            		}
+            		
+            		
+            		
+            .bts{
+            	background: #fff;
+            }
+            
+              .bts1{
+            	background: #fff;
+            	overflow: hidden;
+            	font-family: sans-serif;
+            	width: 50px;
+            	margin: 10px;
+            }
+            
+            
+            .nod{
+            			text-decoration: none;
+            			font-family: sans-serif;
+            	}
+            	
+            	.imgs{
+            			border-radius:200px;
+            			float: left;
+            			margin-top:10px;
+            			margin-left:50px;
+            			width:100px;
+            		  height:100px;
+            		
+            		}
+            		
+            		
+             	.imgs1{
+            			border-radius:200px;
+            			float: right;
+            			margin-top:10px;
+            			margin-right:50px;
+            			width:60px;
+            		    height:60px;
+            		}
+            		
+           		a{
+					font-family: sans-serif;
+					text-decoration:none;
+					color: #10059E;
+					font-size: 1em;
+					margin: 20px;
+					background: #fff;
+					top: 10px;
+					}
+			
+			
+		   	.submit{
+				 border:none;
+				 color:#fff;
+				 border-radius: 5px;
+				 cursor: pointer;
+				 float: right;
+				 background: none;
+				}
+				
+            		
+            		.top{
+					height: 50px;
+					width: 90%;
+					background: #fff;
+					margin-left: auto;
+	 		    	margin-right: auto;
+	 		    	box-shadow: 0px 20px 30px rgba(0,0,0,0.2);
+	 		    	border-radius: 0px 0px 0px 20px;
+	 		    	float: right;
+				}
+				
+				.cinput{
+						border:none;
+						padding: 4px;
+						border-radius: 4px;
+						margin-right: 5px;
+					}
+					
+					
+				
+				
+				.footer{
+						width: 100%;
+						 height: 50px; 
+						 background: #000; 
+						 margin-top: 45px;
+					}
+					
+					
+					h4{
+						display: none;
+						
+					}
+					
+				@media(max-width:1100px){
+				
+				
+						.base{
+							width: 80%;
+							margin-left:auto;
+							margin-right:auto;
+							background: #fff;
+							
+						}
+				
+				
+				
+						   	.top{
+					    	height: 110px;
+							width: 100%;
+							border-radius: 0px 0px 0px 0px;
+						}
+						
+						
+						           
+			            h3{
+			            width:250px;
+			            font-family: sans-serif;
+			            font-weight: 600;
+			            color: #070B7B;
+			            background: #fff;
+			            padding: 12px;
+			            margin-top: 90px;
+			            margin-left: auto;
+			            margin-right: auto;
+			            }
+					
+				}		
+			
+          	@media(max-width:780px){
+            		
+            	.base{
+					width: 95%;
+					margin-left:auto;
+					margin-right:auto;
+					background: #fff;
+					
+				}
+            		
+               .ems{
+            	box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.3);  
+		        height: 150px; 
+		        width: 98%;
+		        background: #fff;
+		        margin: 10px;
+		        font-family: sans-serif;
+            	
+            		}
+            		
+        
+            	
+            	  	.top{
+					height: 120px;
+					width: 100%;
+					background: #fff;
+	 		    	border-radius: 0px 0px 0px 0px;
+	 		    	float: right;
+				}
+					
+
+					input{
+						border:none;
+						width:120px;
+						margin-top:10px;
+						padding: 4px;
+						border-radius: 4px;
+						margin-right: 5px;
+					}
+				
+						
+					a{
+						font-family: sans-serif;
+						text-decoration:none;
+						color: #10059E;
+						font-size: 1em;
+						margin:10px;
+						background: #fff;
+						display: inline-block;
+					
+						}
+            		
+            		
+            	   	.submit{
+						 border:none;
+						 color:#fff;
+						 width:15px;
+						 height:15px;
+						 border-radius: 5px;
+						 margin-right:20px;
+						 cursor: pointer;
+						 float: right;
+						}
+						
+						
+				  	.imgs1{
+            	
+            			border-radius:200px;
+            			float: right;
+            			margin-top:-150px;
+            			margin-right:10px;
+            			width:30px;
+            		    height:30px;
+            		
+            		}         
+                		
+	      		  	.imgs{
+	      		  	border-radius:200px;
+	      			float: left;
+	      			margin-top:8px;
+	      			margin-left:10px;
+	      		  	width:70px;
+	      		    height:70px;
+	      		}
+	      		
+	      		
+	      		       .bts1{
+		            	background: #fff;
+		            	overflow: hidden;
+		            	font-family: sans-serif;
+		            	width: 90%;
+		            	float: left;
+		            }
+	            
+	              .scrollbar{ 
+        				 width:100%;
+        				 height:525px;
+        				 margin-top: -130px;
+      				  }
+            
+	               .ads1{
+	            	display: none;
+	            
+	            	}
+            	
+            	.ads2{
+            		display: block;
+           			width: 100%;
+           			height: 150px;
+           			margin-top:130px;
+           			margin-bottom:40px;
+           			background: #fff;
+            	
+            	}
+            	.ads{
+            	display:block;
+            	width: 100%; 
+            	height: 200px; 
+            	background-color: #fff;
+            	}
+            	
+    
+            	
+            	.footer{
+						width: 100%;
+						 height: 50px; 
+					}
+					
+					
+					
+					h5{
+					background: #fff;
+					}
+					
+					
+					h4{
+						display: block;
+						background: #fff;
+						
+					}
+					
+            		}
+</style>
+
+</h:head>
+
+<h:body>
+<script>
+document.write("<iframe src='Adsense.html'>");
+document.write("</iframe>");
+</script>
+
+<h:form>
+	
+				<div   class="base">
+				
+					<div    class="boz">
+					<div   class="xms">
+					<h4   style="background: #000; color:#fff; margin-left: 10px;">DEALIT BLOG</h4>
+					</div>
+				   <img src="images/Banner.png" alt="images/Banner.png"   class="top_logo"/>
+				
+				</div>
+				
+					
+				<div    class="top">
+				
+							<table   style="background: #fff; margin-left: 20px;">
+									<tr  style="background: #fff;">
+										<td  style="background: #fff;">
+										<br/>
+											<a href="index.xhtml">Home</a> 
+											<a href="music.jsp">Trending Music</a> 
+											<a href="videolist.xhtml">Viral Video</a> 
+											<a href="advert.xhtml">Advertisement</a> 
+											
+											<h:inputText      class="cinput"    value="#{navigation.searchs}">
+											<f:passThroughAttribute name="placeholder"  value="Search"/>
+											</h:inputText>
+											<h:commandButton    class="submit"   image="images/loupe.png"   action="#{navigation.query_db_vid}"/>
+										</td>
+									</tr>
+							</table>
+							
+				</div>
+	
+	
+		
+		
+		<div    class="vid-list">
+		
+		<div   class="ads2">
+			  <b> <h4>Advertisement  Space</h4>  </b> 
+		</div>
+		
+		
+		<b><h3   align="center">New Trending Videos</h3></b>
+		    <div class="scrollbar"  id="style-1">
+                        <div class="force-overflow">
+			
+			
+			
+			
+						<ui:repeat var="nx"      value="#{navigation.list2}">
+						<h:commandLink    class="nod"     action="#{navigation.nav_one}">
+								<center class="bts">
+										<div   class="ems">
+											
+													<h:inputHidden  class="bts"   value="#{nx.id}"/>
+													
+													<p:graphicImage   value="#{navigation.stream}"    class="imgs"    cache="false"    alt="#{nx.title}">
+													   <f:param  name="pas"     value="#{nx.paths}" />
+													</p:graphicImage>
+												
+													<h:inputHidden  class="bts"   value="#{nx.paths}"/>
+													<h:inputHidden  class="bts"   value="#{nx.current}"/>
+													<br/>	<br/> 
+													<h:outputLabel  class="bts1"   value=" Title:  #{nx.title}"/>
+													 
+													<h:outputLabel   class="bts1"  value="Now Playing   Click to View"/>
+		
+										           <img   src="images/Video_start.png"    class="imgs1"  />
+												
+										</div>
+								</center>
+								<f:param name="w1"    value="#{nx.paths}"/>
+								 <f:param name="w2"   value="#{nx.current}"/>
+								<f:param name="w3"    value="#{nx.title}"/>
+							
+							
+						</h:commandLink>
+						
+							<div   class="ads">
+							<h5>Ad Space</h5>
+							</div>
+						</ui:repeat>
+			   </div>
+	    	</div>
+	    	
+	    	
+	    	
+	    			<div  class="ads1">
+							
+			      </div>
+			
+		</div>
+		
+		
+			
+		
+		
+		</div>
+   
+     <div   class="footer">
+	
+	</div>
+
+
+</h:form>
+</h:body>
+
+
+</html>

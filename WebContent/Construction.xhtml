@@ -1,0 +1,2037 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+		xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Monclaris Construction</title>
+
+ <meta name="robots" content="index, follow" />
+    <meta name="description" content="logistics, Tutoring, laundry, Construction"/>
+    
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+	<!--Sweet alert-->
+	<script type="text/javascript" src="folder1/bootstrap.js" />
+	<script type="text/javascript" src="folder1/bootstrap.min.js" />
+	<script src="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.css" />
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      
+
+	<style>
+
+	* {
+		margin: 0px;
+		padding: 0px;
+	}
+	.base {
+		width: 100%;
+		height: 2550px;
+	}
+	
+	  #info_bot{
+            position:fixed;
+            display:none;
+            float: left;
+             height: 120px;
+            width: 24%;
+            font-size:1em;
+            margin-left:68%;
+            margin-top:25%;
+            background: #D6D6D6;
+            border-radius: 10px;
+            }
+            
+            
+            .faces{
+            padding:10px;
+            width: 60px;
+            height: 60px;
+            }
+            
+            .wr{
+            float:right;
+            padding:5px;
+            font-size: 15px;
+            }
+            
+	.top_nav {
+		position: fixed;
+		width: 100%;
+		height: 83px;
+		margin-top: -50px;
+		background-color: #fff;
+		box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
+	}
+	.ui-growl {
+		top: 20%;
+	}
+	.wat_body {
+		position: fixed;
+		float: left;
+		margin-left: 92%;
+		margin-top: 35%;
+	}
+	.wat_icons {
+		width: 60px;
+	}
+	.smooth {
+		display: none;
+	}
+	.bread_nav {
+		display: none;
+	}
+	span {
+		display: none;
+	}
+	.logo {
+		margin-left: 20px;
+	}
+	.cls {
+		position: absolute;
+		width: 70%;
+		height: 82px;
+		margin-left: 200px;
+	}
+	.box {
+		float: left;
+		margin: 2px;
+		font-size: 20px;
+		color: #BD8D30;
+		height: 84px;
+		width: 30%;
+		background: none;
+		border: none;
+		font-family: arial;
+		 cursor:pointer;
+	}
+	.search_nav {
+		float: right;
+		height: 70px;
+		width: 100px;
+		margin-right: 50px;
+	}
+	.g1 {
+		display: none;
+	}
+	.g2 {
+		float: right;
+		padding: 5px;
+	}
+	.banner {
+		width: 100%;
+		height: 700px;
+		margin-top: 50px;
+		background-image: url('folder/jeff_con.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.bill_board {
+		float: left;
+		margin-left: 20px;
+		color: #fff;
+		width: 750px;
+		height: 400px;
+		font-size: 80px;
+		font-family:sans-serif;
+		font-size:3em;
+		margin-top: 80px;
+	}
+	.bill_mobile {
+		display: none;
+	}
+	.videos {
+		width: 50%;
+		height: 400px;
+		background: #E4E4E4;
+		border-radius: 30px 30px 30px 30px;
+	}
+	iframe {
+		float: right;
+		border: none;
+		width: 40%;
+		height: 340px;
+		margin-top: 30px;
+		margin-right: 42px;
+	}
+	.write-ups1 {
+		float: left;
+		height: 80px;
+		width: 20%;
+		margin-left: -10%;
+		position: absolute;
+		
+		
+	}
+	.first_write_up {
+		width: 50%;
+		height: 250px;
+		margin-top: -20px;
+	}
+	h2 {
+		font-family: fantasy;
+		color: #BD8D30;
+		width: 90%;
+		font-weight: 200;
+	}
+	.second_write_up {
+		float: right;
+		width: 80%;
+		height: 50px;
+	}
+	.third_write_up {
+		width: 100%;
+		height: 350px;
+		display: flex;
+	}
+	.fourth_write_up {
+		width: 60%;
+		height: 350px;
+		display: flex;
+		margin-top: 10px;
+	}
+	
+
+	.info {
+		font-size: 39px;
+		font-family: sans-serif;
+	}
+	#day1 {
+		height: 300px;
+		width: 30%;
+		margin: 22px;
+		border-radius: 10px;
+		box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+	}
+	#day2 {
+		height: 300px;
+		width: 30%;
+		margin: 22px;
+		border-radius: 10px;
+		box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+	}
+	#day3 {
+		height: 300px;
+		width: 30%;
+		margin: 22px;
+		border-radius: 10px;
+		box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+	}
+	#day4 {
+		height: 300px;
+		width: 50%;
+		margin: 22px;
+		border-radius: 10px;
+		box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+	}
+	#day5 {
+		height: 300px;
+		width: 50%;
+		margin: 22px;
+		border-radius: 10px;
+		box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+	}
+	.img_size {
+		width: 60%;
+		height: 250px;
+		margin-top: 17px;
+		margin-left: 10px;
+	}
+	.write {
+		float: right;
+		width: 30%;
+		max-height: 150px;
+		overflow: hidden;
+		margin-top: 10px;
+	}
+	.st {
+		float: right;
+		margin-top: -40px;
+		margin-right: 10px;
+		border: none;
+		padding: 5px;
+		background-color: #54C8EF;
+		color: #fff;
+		border-radius: 5px;
+	}
+	.fiths_write_up {
+		width: 100%;
+		height: 330px;
+		display: flex;
+		background-color: rgba(0, 0, 0, 0.10);
+	}
+	.vision {
+		width: 22%;
+		height: 289px;
+		padding: 5px;
+		box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+		margin: 20px;
+	}
+	.tops {
+		height: 200px;
+		width: 90%;
+		margin-top: 10px;
+	}
+	.bots {
+		margin-top: 10px;
+		height: 40px;
+		width: 90%;
+		background-color: #BD8D30;
+	}
+	.eots {
+		margin-top: 10px;
+		height: 40px;
+		width: 90%;
+		background-color: #697351;
+	}
+	.fn_size {
+		font-size: 20px;
+		color: #fff;
+	}
+	.sw {
+		height: 7px;
+	}
+
+	.sw1 {
+		margin-top: 10px;
+		display: inline-block;
+		height: 350px;
+		width: 33%;
+		background-color: #003481;
+	}
+	.dis {
+		float: left;
+		margin-left: -70px;
+		font-size: 30px;
+		padding: 10px;
+		color: #fff;
+	}
+	.bottom_plate {
+		float: left;
+		width: 60px;
+		height: 5px;
+		margin-top: 50px;
+		margin-left: 20px;
+		background-color: #BD8D30;
+		border-radius: 2px;
+	}
+	.social_icons {
+		height: 200px;
+		width: 70px;
+		float: right;
+		margin-top: 70px;
+	}
+	.wmg {
+		height: 25px;
+		width: 25px;
+		margin: 20px;
+	}
+	.p_no {
+		float: left;
+		margin-left: 10px;
+		color: #fff;
+	}
+	.dot {
+		float: left;
+		margin: 2px;
+		color: #fff;
+		margin-top: 10px;
+	}
+	.sd_no {
+		float: left;
+		margin: 20px;
+		color: #fff;
+		margin-top: -5px;
+	}
+	.s_no {
+		float: left;
+		color: #fff;
+	}
+	.phone_no_section {
+		width: 100%;
+		height: 100px;
+		margin-top: 20px;
+		float: left;
+	}
+	.form_no_section {
+		float: right;
+		margin-right: 10px;
+		width: 60%;
+		height: 165px;
+		border: 2px solid #fff;
+		border-radius: 10px;
+	}
+	.addres_no_section {
+		margin-top: 20px;
+		width: 60%;
+		height: 250px;
+		float: left;
+	}
+	.social_no_section {
+		margin-top: 25px;
+		width: 80%;
+		height: 250px;
+		float: left;
+	}
+	.btn_sub {
+		float: left;
+		margin-top: 15px;
+		margin-left: 5%;
+		padding: 5px;
+		background-color: #ff3333;
+		color: #fff;
+		border: none;
+	}
+	.mail {
+		float: right;
+		border: none;
+		margin-right: 10px;
+		width: 90%;
+		margin-top: 2px;
+		padding: 5px;
+		border-radius: 5px;
+		background-color: #fff;
+	}
+	.logo1 {
+		display: none;
+	}
+	.sx {
+		margin: 20px;
+		color: #fff;
+	}
+	.c1 {
+		display: none;
+	}
+	.c2 {
+		display: none;
+	}
+	.mobile_view_section {
+		display: none;
+	}
+	.writing {
+		display: none;
+	}
+	.im_tabs {
+		display: none;
+	}
+	.sts {
+		display: none;
+	}
+	.tablet_write {
+		display: none;
+	}
+	.tablet_banner1 {
+		display: none;
+	}
+	.tablet_banner2 {
+		display: none;
+	}
+	
+	.tablet_bottom_box {
+		display: none;
+	}
+	.tablet_bottom {
+		display: none;
+	}
+
+	.bcbcbcb {
+		position:fixed;
+		display: none;
+		background-color: #fff;
+		border-radius: 10px;
+		width: 30%;
+		height: 400px;
+		z-index:2;
+	   margin-top:10%;
+	   margin-left:35%;
+	   float:left;
+	   transfrom:translate(-50px,-50px);
+		box-shadow: 0px 20px 30px rgba(0,0,0,0.2);
+	}
+	
+	
+	
+	.intaks {
+		width: 50%;
+		height: 20px;
+		background: #ccccff;
+		border-radius: 10px;
+		margin: 10px;
+		padding: 5px;
+		border: none;
+		max-width: 80%;
+		max-height: 50px;
+	}
+	
+	
+	
+	.intak1 {
+		width: 80%;
+		height: 120px;
+		background: #ccccff;
+		border-radius: 10px;
+		margin: 10px;
+		padding: 5px;
+		border: none;
+		max-width: 80%;
+		max-height: 120px;
+	}
+	
+	
+	
+	.clso {
+		float: right;
+		margin-top: 20px;
+		margin-right: 10px;
+		padding: 12px;
+		border-radius: 5px;
+		border: none;
+		background: #ccccff;
+		cursor: pointer;
+	}
+
+	.out{
+	margin-left: 10px; 
+	font-size: 1.3em; 
+	font-family: sans-serif;
+	width: 30%; 
+    float: left;
+    margin-top: 80px; 
+		}
+
+@media ( max-width :1200px) {
+	* {
+		margin: 0px;
+		padding: 0px;
+	}
+	
+		.base{
+		overflow: hidden;
+		height: 5700px;
+		}
+		
+		
+		
+	.logo {
+		display: block;
+		margin-top: -105px;
+		margin-left: 3%;
+		
+	}
+	
+	
+	.wat_body {
+		position: fixed;
+		float: left;
+		margin-left: 85%;
+		margin-top: 500px;
+	}
+	
+	.top_nav {
+		position: fixed;
+		width: 100%;
+		height: 85px;
+		margin-top: 0px;
+		background-color: #fff;
+		box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
+	}
+	.g1 {
+		display: none;
+	}
+	.bcbcbcb {
+		display: none;
+		background-color: #fff;
+		border-radius: 10px;
+		width: 50%;
+		height: 400px;
+		z-index:2;
+	   margin-top:10%;
+	   margin-left:27%;
+	   float:left;
+		box-shadow: 0px 20px 30px rgba(0,0,0,0.2);
+		
+	}
+	
+	
+	.videos {
+		width: 70%;
+		height: 400px;
+		background: #E4E4E4;
+		margin-top:120px;
+		border-radius: 30px 30px 30px 30px;
+	}
+	.write-ups1 {
+		float: left;
+		height: 80px;
+		width: 30%;
+		margin-top: -320px;
+		font-size: 20px;
+		margin-left: 5%;
+	}
+	iframe {
+		float: right;
+		border: none;
+		height: 400px;
+		margin-right: 2%;
+		width: 50%;
+	}
+
+	.cls {
+		position: absolute;
+		width: 60%;
+		height: 82px;
+		margin-top: -105px;
+		margin-left: 230px;
+		background: #fff;
+	}
+	.box {
+		float: left;
+		margin: 22px;
+		font-size: 20px;
+		color: #BD8D30;
+		height: 84px;
+		width: 20%;
+		background: none;
+		border: none;
+		font-family: arial;
+	}
+	.bread_nav {
+		display:block;
+		height: 40px;
+		width: 15%;
+		margin: 5px;
+		margin-top: 60px;
+	}
+	span {
+		display: none;
+	}
+	
+	
+	.search_nav {
+		float: right;
+		height: 30px;
+		width: 60px;
+		margin-right: 10px;
+		margin-top: -60px;
+	}
+	.banner {
+		width: 100%;
+		height: 700px;
+		top: 100px;
+		background-image: url('folder/mobile_banner.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.bill_board {
+		float: left;
+		margin-left: 20px;
+		color: #fff;
+		width: 200px;
+		font-size: 50px;
+		margin-top: 80px;
+	}
+	.bill_mobile {
+		display: none;
+	}
+	.g2 {
+		float: right;
+		padding: 5px;
+		margin-top: 8px;
+	}
+	.c1 {
+		display: none;
+		
+	}
+	.c2 {
+		display: none;
+	}
+	.first_write_up {
+		width: 100%;
+		height: 300px;
+		margin-bottom: 20px;
+	}
+	h2 {
+		margin-top: 20px;
+		font-family: fantasy;
+		color: #BD8D30;
+		width: 60%;
+		font-weight: 100;
+	}
+	.second_write_up {
+		float: right;
+		width: 40%;
+		height: 50px;
+		font-size: 15px;
+		margin-right: 50px;
+	}
+	.third_write_up {
+		display: none;
+	}
+	.fourth_write_up {
+		display: none;
+	}
+	.fiths_write_up {
+		display: none;
+	}
+
+	.write {
+		float: right;
+		width: 30%;
+		margin-top: 10px;
+		font-size: 10px;
+	}
+	.info {
+		font-size: 29px;
+	}
+	.smooth {
+		position: absolute;
+		display: none;
+		width: 100%;
+		height: 130px;
+		margin-top: 50px;
+		background: #fff;
+	}
+	.tablet_view {
+		display: block;
+		width: 100%;
+		float: left;
+		margin-top: -20px;
+		background: #fff;
+	}
+	.btn_sub {
+		margin-top: 20px;
+		padding: 2px;
+	}
+	.writing {
+		float: right;
+		margin-right: 2px;
+		padding: 3px;
+		width: 40%;
+		margin-top: 50px;
+	}
+	.im_tabs {
+		width: 55%;
+		height: 300px;
+		float: left;
+		margin-left: 10px;
+		margin-top: 20px;
+		display: block;
+	}
+	.sts {
+		float: right;
+		margin-top: 100px;
+		margin-right: 10px;
+		border: none;
+		padding: 5px;
+		background-color: #54C8EF;
+		color: #fff;
+		border-radius: 5px;
+	}
+	.box-ds {
+		background-color: #fff;
+		display: inline-block;
+		width: 70%;
+		height: 400px;
+		margin: 15px;
+		border-radius: 10px;
+		box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+	}
+	.mobile_view_section {
+		display: none;
+	}
+	.sbox-ds {
+		background-color: #E4E4E4;
+		display: inline-block;
+		width: 70%;
+		height: 400px;
+		margin: 15px;
+		box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+	}
+	.tablet_write {
+		display:block;
+		width: 90%;
+		height: 300px;
+		padding: 15px;
+		font-size: 20px;
+		margin-top:40px;
+		font-family: sans-serif;
+	}
+	.tablet_banner1 {
+	    display:block;
+		background-color: #BD8D30;
+		width: 80%;
+		height: 50px;
+		margin-top: -100px;
+	}
+	.tablet_banner2 {
+		display:block;
+		background-color: #697351;
+		width: 80%;
+		height: 50px;
+		margin-top: -100px;
+	}
+	
+	.tablet_bottom {
+		width: 100%;
+		background-color: #E4E4E4;
+	}
+	.tablet_bottom_box {
+		background-color: #003481;
+		height: 300px;
+		width: 70%;
+		margin: 10px;
+		box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+	}
+	.toping {
+		width: 100%;
+		height: 50px;
+		font-size: 20px;
+	}
+	.inning {
+		float: left;
+		color: #fff;
+		margin-left: 10px;
+		padding: 15px;
+	}
+	.rule {
+		position: absolute;
+		float: left;
+		border-radius: 2px;
+		margin-left: 30px;
+		height: 5px;
+		width: 50px;
+		background-color: #BD8D30;
+	}
+	.telcom {
+		float: left;
+		margin-left: -130px;
+		margin-top: 45px;
+		height: 200px;
+		width: 30%;
+	}
+	.tele {
+		float: left;
+		padding: 5px;
+	}
+	.tele1 {
+		float: left;
+		padding: 5px;
+	}
+	.enqiury_form {
+		float: right;
+		height: 220px;
+		width: 40%;
+		padding: 2px;
+		margin-right: 3px;
+		border-radius: 5px;
+		border: 2px solid #fff;
+	}
+	.nos {
+		width: 90%;
+		height: 40px;
+		margin-top: -50px;
+		color: #fff;
+	}
+	.vail {
+		float: left;
+		width: 80%;
+		height: 30px;
+		border: none;
+		margin-left: 10px;
+		margin-top: 15px;
+		margin: 10px;
+		padding: 5px;
+		border-radius: 5px;
+		background-color: #fff;
+	}
+	.tbtn_sub {
+		float: left;
+		margin-left: 7px;
+		margin-top: 10px;
+		padding: 5px;
+		background-color: #ff3333;
+		color: #fff;
+		border: none;
+	}
+	.taddres_no_section {
+		margin-top: 15px;
+		width: 80%;
+		height: 270px;
+		float: left;
+		margin-left: 100px;
+	}
+	.tdot {
+		float: left;
+		margin: 1px;
+		color: #fff;
+		margin-top: 12px;
+	}
+	.tsd_no {
+		float: left;
+		margin-left: 20px;
+		margin: 10px;
+		font-size: 20px;
+		margin-top: 1px;
+	}
+	
+	.tsocial_no_section {
+		margin-top: 15px;
+		width: 80%;
+		height: 180px;
+		float: left;
+		margin-left: 15px;
+		color: #fff;
+	}
+	.fls {
+		float: left;
+	}
+	.t_social_icons {
+		float: right;
+		margin-right: 10px;
+		margin-top: 20px;
+		width: 50px;
+		height: 200px;
+	}
+	.tmg {
+		width: 30px;
+		height: 30px;
+		margin: 7px;
+	}
+	
+		.intaks {
+		width: 80%;
+		height: 20px;
+		background: #ccccff;
+		border-radius: 10px;
+		margin: 10px;
+		padding: 5px;
+		border: none;
+		max-width: 80%;
+		max-height: 50px;
+	}
+	
+	
+	
+	.intak1 {
+		width: 80%;
+		height: 120px;
+		background: #ccccff;
+		border-radius: 10px;
+		margin: 10px;
+		padding: 5px;
+		border: none;
+		max-width: 80%;
+		max-height: 120px;
+	}
+	
+		.clso {
+		float: right;
+		margin-top: 20px;
+		margin-right: 10px;
+		padding: 12px;
+		border-radius: 5px;
+		border: none;
+		background: #ccccff;
+	}
+	
+		
+	.out{
+	margin-left: 10px; 
+	font-size: 1.3em; 
+	font-family: sans-serif;
+	width: 40%; 
+    float: left;
+    margin-top: 70px; 
+		}
+}
+
+@media ( max-width :700px) {
+	* {
+		margin: 0px;
+		padding: 0px;
+		
+	}
+	
+	
+	.base {
+		    width: 100%;
+		    height: auto;
+		  
+	      }
+	
+	
+		  #info_bot{
+            position:fixed;
+            display:none;
+            float: left;
+             height: 120px;
+            width: 70%;
+            margin-left:30%;
+            margin-top:75%;
+            background: #D6D6D6;
+            border-radius: 10px;
+            }
+            
+            
+        .faces{
+            padding:10px;
+            width: 60px;
+            height: 60px;
+            }
+            
+            .wr{
+            float:right;
+            padding:5px;
+            font-size: 15px;
+            }
+            
+	.top_nav {
+		position: fixed;
+		width: 100%;
+		height: 85px;
+		margin-top: 0px;
+		box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
+	}
+	.bcbcbcb {
+		display: none;
+		background-color: #fff;
+		border-radius: 10px;
+		width: 80%;
+		height: 400px;
+		z-index:2;
+	   margin-top:15%;
+	   margin-left:10%;
+	   float:left;
+		box-shadow: 0px 20px 30px rgba(0,0,0,0.2);
+	}
+	.wat_body {
+		position: fixed;
+		float: left;
+		margin-left: 81%;
+		margin-top: 570px;
+	}
+	.wat_icons {
+		width: 40px;
+	}
+	.g1 {
+		display: none;
+	}
+	
+	.videos {
+		width: 90%;
+		margin-top: 70px;
+		height: 520px;
+		background: #D6D6D6;
+		border-radius: 0px 30px 30px 0px;
+	}
+	.write-ups1 {
+		float: left;
+		height: 80px;
+		width: 90%;
+		margin-top: -50px;
+		font-size: 15px;
+		margin-left: 5%;
+	}
+	iframe {
+		border: none;
+		height: 400px;
+		margin-left: 1%;
+		width: 90%;
+	}
+	.smooth {
+		position: absolute;
+		display: none;
+		width: 100%;
+		height: 130px;
+		margin-top: 50px;
+		background-color: #fff;
+	}
+	.box {
+		float: left;
+		margin: 2px;
+		font-size: 15px;
+		color: #BD8D30;
+		height: 24px;
+		width: 100%;
+		background: none;
+		border: none;
+		font-family: arial;
+	}
+	.cls {
+		display: none;
+	}
+	.bread_nav {
+		display:block;
+		height: 40px;
+		width: 15%;
+		margin: 5px;
+		margin-top: 10px;
+	}
+	.logo {
+		display: block;
+		margin-top: -55px;
+		margin-left: 33%;
+		
+	}
+	
+	
+	.search_nav {
+		float: right;
+		height: 30px;
+		width: 60px;
+		margin-right: 10px;
+		margin-top: -40px;
+	}
+	.banner {
+		width: 100%;
+		height: 700px;
+		top: 100px;
+		background-image: url('folder/mobile_banner.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.bill_board {
+		display: none;
+	}
+	.bill_mobile {
+		display: block;
+		float: left;
+		margin-left: 20px;
+		color: #fff;
+		width: 75%;
+		font-family:sans-serif;
+		font-size:2em;
+		margin-top: 80px;
+	}
+	span {
+		display: block;
+		background-color: #000;
+		width: 40px;
+		height: 5px;
+		border-radius: 5px;
+		margin: 5px;
+	}
+	.g1 {
+		display: none;
+	}
+	.g2 {
+		float: right;
+		padding: 5px;
+		margin-top: -42px;
+	}
+	.c1 {
+		display: none;
+		
+	}
+	.c2 {
+		display: none;
+	}
+	.first_write_up {
+		width: 100%;
+		height: 250px;
+		height: 300px;
+		margin-bottom: 20px;
+	}
+	h2 {
+		margin-top: 20px;
+		font-family: fantasy;
+		color: #BD8D30;
+		width: 90%;
+		font-weight: 100;
+	}
+	.second_write_up {
+		width: 60%;
+		height: 50px;
+		font-size: 15px;
+	}
+	.third_write_up {
+		display: none;
+	}
+	.fourth_write_up {
+		display: none;
+	}
+	.fiths_write_up {
+		display: none;
+	}
+	
+	.tablet_view {
+		display: none;
+	}
+	.write {
+		float: right;
+		width: 30%;
+		margin-top: 10px;
+		font-size: 10px;
+	}
+	.info {
+		font-size: 19px;
+	}
+	.smooth {
+		position: absolute;
+		display: none;
+		width: 100%;
+		height: 130px;
+		margin-top: 50px;
+		background-color: #fff;
+	}
+	.mobile_view_section {
+		display: block;
+		width: 100%;
+		float: left;
+		margin-top: -30px;
+		
+	}
+	.box-dsb {
+		background-color: #fff;
+		width: 90%;
+		height: 200px;
+		margin: 10px;
+		border-radius: 10px;
+		box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+	}
+	.writing {
+		float: right;
+		margin-right: 2px;
+		padding: 1px;
+		width: 30%;
+		font-size: 12px;
+		margin-top: 22px;
+	}
+	.im_tabs {
+		width: 55%;
+		height: 180px;
+		float: left;
+		margin-left: 10px;
+		margin-top: 10px;
+		display: block;
+	}
+	.sts {
+		float: right;
+		margin-top: 100px;
+		margin-right: 10px;
+		border: none;
+		padding: 5px;
+		background-color: #54C8EF;
+		color: #fff;
+		border-radius: 5px;
+	}
+	.mbox-ds {
+		background-color: #E4E4E4;
+		display: inline-block;
+		width: 90%;
+		height: auto;
+		margin: 15px;
+		padding:15px;
+		margin-left:1.5%;
+		box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+	}
+	.mobile_write {
+		padding: 15px;
+		font-size: 1.2em;
+		font-family: sans-serif;
+	}
+	.mobile_banner1 {
+		background-color: #BD8D30;
+		width: 50%;
+		height: 30px;
+		text-align: center;
+	}
+	.mobile_banner2 {
+		background-color: #697351;
+		width: 50%;
+		height: 30px;
+		text-align: center;
+	}
+	
+	.wr{
+	
+	
+	color: #fff;
+	font-family: sans-serif;
+	margin-right: 0%;
+	width: 100%;
+	}
+	
+	.mobile_bottom {
+		width: 100%;
+		background-color: #E4E4E4;
+	}
+	.mobile_bottom_box {
+		background-color: #003481;
+		height: 300px;
+		width: 90%;
+		margin: 10px;
+		box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+	}
+	.mobile_inning {
+		float: left;
+		color: #fff;
+		margin-left: 10px;
+		font-size: 12px;
+		padding: 15px;
+	}
+	.mobile_telcom {
+		float: left;
+		margin-left: 3px;
+		margin-top: 50px;
+		height: 200px;
+		width: 50%;
+		font-size: 12px;
+	}
+	.nos {
+		width: 90%;
+		height: 40px;
+		margin-top: -35px;
+		color: #fff;
+	}
+	.mb_addres_no_section {
+		margin-top: 15px;
+		width: 80%;
+		height: 270px;
+		float: left;
+		margin-left: 30px;
+	}
+	.mb_sd_no {
+		float: left;
+		margin-left: 20px;
+		margin: 10px;
+		font-size: 15px;
+		margin-top: 1px;
+	}
+	.mb_social_no_section {
+		margin-top: 15px;
+		width: 60%;
+		height: 180px;
+		float: left;
+		margin-left: 5px;
+		color: #fff;
+	}
+	.mb_ls {
+		float: left;
+		font-size: 14px;
+	}
+	.enqiury_form {
+		float: right;
+		height: 150px;
+		width: 80%;
+		padding: 2px;
+		margin-top: 30px;
+		margin-right: 3px;
+		border-radius: 5px;
+		border: 2px solid #fff;
+	}
+	.vail {
+		float: left;
+		width: 80%;
+		height: 10px;
+		border: none;
+		margin-left: 10px;
+		margin-top: 15px;
+		margin: 10px;
+		padding: 5px;
+		border-radius: 5px;
+		background-color: #fff;
+	}
+	.mobile_telcom {
+		float: left;
+		margin-left: 3px;
+		margin-top: 10px;
+		height: 50px;
+		width: 50%;
+		font-size: 12px;
+	}
+	.tbtn_sub {
+		margin-top: 1px;
+		padding: 5px;
+	}
+	
+		.out{
+	margin-left: 10px; 
+	font-size: 1.3em; 
+	font-family: sans-serif;
+	width: 80%; 
+    float: left;
+    margin-top: -20px; 
+		}
+		
+	
+}
+
+</style>
+
+	<script type="text/javascript" src="folder1/jquery-1.8.3.js" />
+	<script>
+		function drop_down() {
+			$('.smooth').slideDown('slow');
+		}
+
+		function closeUp() {
+			$('.smooth').slideUp('fast');
+		}
+
+	
+
+	
+		function views() {
+			$('.bcbcbcb').fadeIn('fast');
+		}
+
+		function clupb() {
+			$('.bcbcbcb').fadeOut('fast');
+		}
+		
+		
+		 function question() {
+  		   $('#info_bot').fadeIn('fast');
+		}
+  		 
+		function clsing() {
+		  $('#info_bot').fadeOut('fast');
+		}
+	</script>
+
+
+
+
+</h:head>
+<h:body>
+	<script>
+		AOS.init({
+			duration : 1200,
+		});
+	</script>
+
+
+
+
+
+
+
+	<!--Screen size of 1130   and  above    Desktop View -->
+	<div class="base">
+
+
+
+		
+				
+		
+		
+
+
+						<div  id="info_bot">
+						             <img src="Images/ssss.png"   class="faces"/>
+						                <br/>
+						                <p:outputLabel class="wr"  value="Good day How can we help You ?"/>    
+						                
+					     </div>
+
+		<div class="wat_body"    onmouseover="question()"    onmouseout="clsing()">
+			<p:link href="https://api.whatsapp.com/send?phone=+2348165248629"    style="background:none">
+				<img src="Images/sas.png" class="wat_icons" />
+			</p:link>
+		</div>
+
+
+
+
+
+		
+
+
+		<h:form>
+			<div class="smooth">
+				<br />
+				<br />
+				<h:commandButton class="box" value="Laundry" action="#{nav.nav2()}"
+					onclick="closeUp()" >
+					<f:param  name="n1"  value=""/>
+					</h:commandButton>
+					
+				<h:commandButton class="box" value="Tutor's" action="#{nav.nav1()}"
+					onclick="closeUp()" />
+				<h:commandButton class="box" value="Logistics"
+					action="#{nav.nav4()}" onclick="closeUp()" />
+			</div>
+		</h:form>
+
+
+
+
+
+
+		<h:form>
+			<div class="top_nav">
+
+
+				<div class="bread_nav" onclick="drop_down()">
+					<span /> <span /> <span />
+				</div>
+
+
+				<div class="cls">
+
+					<h:commandButton class="box" value="Laundry" action="#{nav.nav2()}">
+					<f:param  name="n1"  value=""/>
+					</h:commandButton>
+					<h:commandButton class="box" value="Tutor's" action="#{nav.nav1()}" />
+					
+					<h:commandButton class="box" value="Logistics" action="#{nav.nav4()}" />
+				</div>
+
+
+
+				<h:commandButton class="logo" image="folder/mon.png" alt=""
+					action="#{nav.nav4}" />
+				
+
+
+				<div class="search_nav">
+
+					<h:commandButton image="folder/loupe_1.png" class="g1" />
+
+					<h:commandButton id="nbv" image="folder/message.png" class="g2"
+						action="#{construction.messaging()}" onclick="views()">
+						<f:ajax execute="nbv" render="qx1" />
+						<f:ajax execute="nbv" render="qx2" />
+						<f:ajax execute="nbv" render="qx3" />
+						<f:ajax execute="nbv" render="kx" />
+					</h:commandButton>
+
+					<h:commandButton image="folder/lop1.png" class="c1" />
+					<h:commandButton image="folder/msg1.png" class="c2" />
+
+				</div>
+
+
+			</div>
+		</h:form>
+
+
+
+
+
+
+		<div class="banner" data-aos="fade-right">
+
+<h:form  >
+	<div class="bcbcbcb">
+			
+				<center >
+
+					<br />
+					<h:outputLabel value="Enquiry  Box" />
+					<br /> <br /> <br />
+					<h:inputText  class="intaks" value="#{order.fullname}"
+						autocomplete="off">
+						<f:passThroughAttribute name="placeholder" value="Name" />
+					</h:inputText>
+					<br />
+					<h:inputText class="intaks" value="#{order.number}"
+						autocomplete="off">
+						<f:passThroughAttribute name="placeholder" value="Phone or Email" />
+					</h:inputText>
+					<br />
+					<h:inputTextarea  class="intak1"
+						value="#{order.item}" autocomplete="off">
+
+						<f:passThroughAttribute name="placeholder" value="Message..." />
+					</h:inputTextarea>
+					<br />
+
+					<div class="container">
+						<div class="card">
+							<div class="card-content">
+								<h3></h3>
+								<h:commandButton  value="Send" class="clso"
+									onclick="clupb()" action="#{order.logistics}" >
+									<f:param name="order_veiw"  value="Construction"/>
+									<f:param name="n1"  value=""/>
+									</h:commandButton>
+							</div>
+						</div>
+					</div>
+
+				</center>
+				
+			</div>
+		
+		
+		</h:form>
+
+			<h:outputLabel class="bill_board" value="UNMATCHED EXCELLENCE IN_ENGINEERING  &amps;  CONSTRUCTION" />
+			<h:outputLabel class="bill_mobile"  value="UNMATCHED EXCELLENCE IN_ENGINEERING  &amps;  CONSTRUCTION" />
+		
+		
+
+
+
+		
+		</div>
+
+
+
+
+		<center>
+			<div class="first_write_up" data-aos="fade-left">
+				<h2 data-aos="fade-right-left">Delivering  Innovative  solutions  for value-driven projects planning and execution.</h2>
+				<br />
+				
+				<br/>
+				<p:outputLabel class="second_write_up"
+					value="Monclaris Nigeria Limited was established in the year 2011 and started operation in the year 2016.  
+                 							The  Company deals with various aspects of  service which include: LOGISTICS, BUILDING CONSTRUCTION, LAUDRY SERVICE     " />
+			</div>
+		</center>
+
+
+		<center>
+			<div class="videos">
+
+				<iframe src="video_player.html" scrolling="no" />
+
+				<br/><br/><br/>
+				<div  class="out">
+							<h:outputLabel    value="Just Completed Project One of 
+										 SLOT Office  within Lagos"/>
+					</div>
+			</div>
+		</center>
+		<br />
+		<br />
+		<center data-aos="fade-in">
+			<h:outputLabel class="info" value="Some of our Area of Specialty" />
+		</center>
+		<div class="third_write_up">
+
+			<div id="day1" data-aos="fade-up">
+				<img class="img_size" src="folder/Screenshot_20200928-205014-1.png" />
+				<p:outputLabel class="write"  />
+				<h:form>
+					
+				</h:form>
+			</div>
+
+			<div id="day2" data-aos="fade-up">
+				<img class="img_size" src="folder/Screenshot_20200928-205021-1.png" />
+				<p:outputLabel class="write" />
+
+				<h:form>
+					
+				</h:form>
+			</div>
+
+			<div id="day3" data-aos="fade-up">
+				<img class="img_size" src="folder/Screenshot_20200928-205036-1.png" />
+				<p:outputLabel class="write"  />
+				<h:form>
+					
+				</h:form>
+			</div>
+		</div>
+
+
+		<center>
+			<div class="fourth_write_up">
+				<div id="day4" data-aos="fade-up">
+					<img class="img_size" src="folder/Screenshot_20200928-205030-1.png" />
+					<p:outputLabel class="write"  />
+					<h:form>
+						
+					</h:form>
+
+				</div>
+
+				<div id="day5" data-aos="fade-up">
+					<img class="img_size" src="folder/Screenshot_20200928-205026-1.png" />
+					<p:outputLabel class="write"  />
+					<h:form>
+						
+					</h:form>
+				</div>
+			</div>
+			
+			
+			
+			
+			
+		</center>
+
+
+
+
+		<br /> <br /> <br /> <br />
+
+		<div class="fiths_write_up">
+
+			<div class="vision" data-aos="flip-up">
+				<center>
+					<div class="tops" data-aos="flip-left">
+					
+						<p:outputLabel
+							value="
+								We transform the world by being creative." />
+					</div>
+
+					<div class="bots" data-aos="flip-up">
+						<div class="sw" />
+						<p:outputLabel class="fn_size" value="Vision" />
+					</div>
+				</center>
+			</div>
+
+
+			<div class="vision" data-aos="flip-right">
+
+				<center>
+					<div class="tops">
+						<p:outputLabel
+							value="At Monclaris we provide innovative methods and ideas to improve the quality of life by encouraging  innovation and creativity  which makes life easier" />
+
+					</div>
+
+					<div class="eots" data-aos="flip-up">
+						<div class="sw" />
+						<p:outputLabel class="fn_size" value="Mission" />
+					</div>
+				</center>
+			</div>
+
+
+			<div class="vision" data-aos="flip-left">
+
+				<center>
+					<div class="tops">
+						<p:outputLabel
+							value="Monclaris Nigeria Limited was established in the year 2011  
+									    At Monclaris we provide efficent and quality service to all our customer at a very afforable cost we believe that none of us
+                 							is as smart as all of us " />
+
+
+					</div>
+
+					<div class="bots" data-aos="flip-up">
+						<div class="sw" />
+						<p:outputLabel class="fn_size" value="Our History" />
+					</div>
+				</center>
+			</div>
+
+			<div class="vision" data-aos="flip-right">
+
+				<center>
+					<div class="tops">
+						<p:outputLabel
+							value="We develop a relationship with our Customers that leaves them with a positive experience" />
+
+					</div>
+
+					<div class="eots" data-aos="flip-up">
+						<div class="sw" />
+						<p:outputLabel class="fn_size" value="Community Relation" />
+					</div>
+				</center>
+			</div>
+
+		</div>
+
+
+
+	
+
+
+		<!--Screen size of 900   and  below too  600   Tablet View -->
+
+		<div class="tablet_view">
+
+
+			<center>
+				<div data-aos="fade-right" class="box-ds">
+
+					<img src="folder/Screenshot_20200928-205014-1.png" alt=""
+						class="im_tabs" />
+
+					<p:outputLabel class="writing"  />
+					<h:form>
+						
+					</h:form>
+				</div>
+
+
+
+
+				<div data-aos="fade-left" class="box-ds">
+
+					<img src="folder/Screenshot_20200928-205021-1.png" alt=""
+						class="im_tabs" />
+
+					<p:outputLabel class="writing"  />
+					<h:form>
+						<!--  <h:commandButton class="sts" value="View More" />-->
+					</h:form>
+				</div>
+
+
+
+				<div data-aos="fade-right" class="box-ds">
+
+					<img src="folder/Screenshot_20200928-205036-1.png" alt=""
+						class="im_tabs" />
+
+					<p:outputLabel class="writing" />
+					<h:form>
+					<!--  <h:commandButton class="sts" value="View More" />-->
+					</h:form>
+				</div>
+
+
+				<div data-aos="fade-left" class="box-ds">
+
+					<img src="folder/Screenshot_20200928-205030-1.png" alt=""
+						class="im_tabs" />
+
+					<p:outputLabel class="writing"  />
+
+					<h:form>
+						<!--  <h:commandButton class="sts" value="View More" />-->
+					</h:form>
+				</div>
+
+				<div data-aos="fade-right" class="box-ds">
+
+
+					<img src="folder/Screenshot_20200928-205026-1.png" alt=""
+						class="im_tabs" />
+
+					<p:outputLabel class="writing"  />
+					<h:form>
+							<!--  <h:commandButton class="sts" value="View More" />-->
+					</h:form>
+				</div>
+
+
+
+
+				<br /> <br /> <br /> <br /> <br />
+				<div style="width: 100%; background-color: #E4E4E4">
+
+					<div data-aos="fade-right" class="sbox-ds">
+						<div class="tablet_write">
+							<p:outputLabel
+								value="We transform the world by being creative." />
+
+						</div>
+						<div class="tablet_banner1">
+							<br />
+							<p:outputLabel style=" color: #fff; padding: 5px;" value="Vision" />
+						</div>
+					</div>
+
+					<div data-aos="fade-right" class="sbox-ds">
+						<div class="tablet_write">
+							<p:outputLabel
+								value="Monclaris Nigeria Limited was established in the year 2011 and started opration in the year 2016.  
+                 							The  Company deals with various aspects of  service which include: LOGISTICS, BUILDING CONSTRUCTION, LAUDRY SERVICE as well as  I.T (Information Technologies). " />
+
+						</div>
+						<div class="tablet_banner2">
+							<br />
+							<p:outputLabel style=" color: #fff; padding: 5px;"
+								value="Mission" />
+						</div>
+					</div>
+
+					<div data-aos="fade-right" class="sbox-ds">
+
+						<div class="tablet_write">
+							<p:outputLabel
+								value="Monclaris Nigeria Limited was established in the year 2011 and started opration in the year 2016 
+											At Monclaris we provide efficent and quality service to all our customer at a very afforable cost." />
+
+
+						</div>
+						<div class="tablet_banner1">
+							<br />
+							<p:outputLabel style=" color: #fff; padding: 5px;"
+								value="Our History" />
+						</div>
+
+					</div>
+
+
+					<div data-aos="fade-right" class="sbox-ds">
+
+						<div class="tablet_write">
+							<p:outputLabel
+								value="We develop a relationship with our Customers that leaves them with a positive experience" />
+
+						</div>
+						<div class="tablet_banner2">
+							<br />
+							<p:outputLabel style=" color: #fff; padding: 5px;"
+								value="Community Relation" />
+						</div>
+
+					</div>
+				</div>
+			</center>
+
+
+		</div>
+
+
+
+
+
+
+		<!--Screen size of 600  and Below  mobile View -->
+		<div class="mobile_view_section">
+
+			<center>
+				<div data-aos="fade-right" class="box-dsb">
+					<img src="folder/Screenshot_20200928-205014-1.png" alt=""
+						class="im_tabs" />
+
+					<p:outputLabel class="writing"
+						value="" />
+
+				</div>
+
+
+
+				<div data-aos="fade-right" class="box-dsb">
+					<img src="folder/Screenshot_20200928-205036-1.png" alt=""
+						class="im_tabs" />
+
+					<p:outputLabel class="writing"
+						value="" />
+
+				</div>
+
+
+
+				<div data-aos="fade-left" class="box-dsb">
+					<img src="folder/Screenshot_20200928-205021-1.png" alt=""
+						class="im_tabs" />
+
+					<p:outputLabel class="writing"
+						value="" />
+
+				</div>
+
+
+
+
+				<div data-aos="fade-right" class="box-dsb">
+					<img src="folder/Screenshot_20200928-205030-1.png" alt=""
+						class="im_tabs" />
+
+					<p:outputLabel class="writing"
+						value="" />
+
+				</div>
+
+				<div data-aos="fade-left" class="box-dsb">
+					<img src="folder/Screenshot_20200928-205026-1.png" alt=""
+						class="im_tabs" />
+
+					<p:outputLabel class="writing"
+						value="" />
+
+				</div>
+			</center>
+
+
+			<br /> <br /> <br />
+			<div style="width: 100%; background-color: #E4E4E4;">
+
+
+				<div data-aos="fade-right" class="mbox-ds">
+
+					<center>
+						<div class="mobile_write">
+							<h:outputLabel
+								value="We transform the world by being creative. " />
+
+						</div>
+
+						<div class="mobile_banner1">
+							<h:outputLabel  value="Vision" class="wr" />
+						</div>
+					</center>
+				</div>
+
+				<div data-aos="fade-right" class="mbox-ds">
+
+					<center>
+						<div class="mobile_write">
+							<h:outputLabel
+								value="Monclaris Nigeria Limited was established in the year 2011 and started opration in the year 2016.  
+                 							The  Company deals with various aspects of  service which include: LOGISTICS, BUILDING CONSTRUCTION, LAUDRY SERVICE, as well as  I.T (Information Technologies).
+                 							At Monclaris we provide efficent and quality service to all our customer at a very afforable cost we believe that none of us
+                 							is as smart as all of us that why we emphasize on team work which guarantes productivity." />
+
+						</div>
+						<div class="mobile_banner2" >
+						
+							<h:outputLabel 
+								value="Mission" class="wr" />
+						</div>
+					</center>
+				</div>
+
+				<div data-aos="fade-right" class="mbox-ds">
+
+					<center>
+						<div class="mobile_write">
+							<h:outputLabel
+								value="Monclaris Nigeria Limited was established in the year 2011  
+									At Monclaris we provide efficent and quality service to all our customer at a very afforable cost we believe that none of us
+                 							is as smart as all of us" />
+
+						</div>
+						<div class="mobile_banner1"  >
+					
+							<h:outputLabel 
+								value="Our History" class="wr" />
+						</div>
+					</center>
+
+				</div>
+
+
+				<div data-aos="fade-right" class="mbox-ds">
+
+					<center>
+						<div class="mobile_write">
+							<h:outputLabel
+								value="We develop a relationship with our Customers that leaves them with a positive experience" />
+
+						</div>
+
+						<div class="mobile_banner2" >
+					
+							<h:outputLabel 
+								value="Community Relation" class="wr"  />
+						</div>
+					</center>
+
+				</div>
+			</div>
+		
+		</div>
+	</div>
+	
+	<div  style="background:  #060214 ;">
+	 <ui:include  src="bottoms.xhtml"/>
+        </div>
+	</h:body>
+	
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+	
+
+<h:head>
+		<title>Order Box</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+
+         <!--Sweet alert-->
+       <script  type="text/javascript"  src="folder1/bootstrap.js"/>
+        <script  type="text/javascript"  src="folder1/bootstrap.min.js"/>     
+        <script src="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.css"/>
+        
+        
+
+<style>
+
+	*{
+		margin: 0px;
+		padding: 0px;
+		background: #eaeaea;
+	}
+	
+	.base{
+		width: 90%;
+		height: 700px;
+		background: #fff;
+		margin-left: auto;
+		margin-right: auto;
+		 box-shadow: 0px 20px 30px rgba(0,0,0,0.2);
+		 padding-bottom: 20px;
+		
+	 
+	 }
+	 
+		 table{
+		 background: #fff;
+		 }
+	
+	
+		
+	
+	   .input_details{
+         float: none;
+         width:100%;
+         height: 350px;
+         background: #fff;
+         }
+         
+         
+         .wr{
+         font-family: sans-serif;
+         font-size: 1.3em;
+          background: #fff;
+         }
+	
+		    .intaks{
+               
+               width: 95%;
+               height: 40px;
+               background: #ccccff;
+               font-family:sans-serif;
+               border-radius: 5px;
+               margin: 10px;
+               padding: 10px;
+               border:none;
+               max-width: 55%;
+               max-height: 40px;
+            }
+            
+            
+             .input_log{
+             margin-left:auto;
+             margin-left:auto;
+             width:100%;
+             height: 550px;
+             margin-top: 30px;
+             background: #fff;
+             text-align: center;
+
+             }
+             
+             
+                .clso{
+               float: right;
+               margin-top: 20px;
+               margin-right: 10px;
+               padding: 12px;
+               border-radius: 5px;
+               border:none;
+               background: #ccccff;
+           }
+           
+           .back{
+           background: #fff;
+           padding: 10px;
+           }
+
+</style>
+
+</h:head>
+
+
+
+	<h:body>
+	
+	
+		<div  class="base">
+		     <table>
+		     <tr class="back">
+		     <td class="back">
+		    
+               <h:outputLabel  class="wr"  value="Delivery even faster Here are a few tips to guide You"/>
+               <br/> <br/>
+                </td>
+		     </tr>
+		     
+		     <tr class="back">
+		     <td class="back">
+		     
+               <div   class="input_details" >
+               <h:outputLabel class="wr"  value="Step 1 :"/>
+               <h:outputLabel  class="wr"  value="When placing your order, always give detailed delivery address to avoid complication."/>
+                <br/><br/> <hr/><br/>
+                 
+                  <h:outputLabel class="wr"  value="Step 2 :"/>
+                  <h:outputLabel class="wr" value="Make Sure your parcel is  well packed, labeled with the address and phone number of the delivery point."/>
+                  <br/><br/><hr/><br/>
+                   <h:outputLabel class="wr" value="Step 3 :"/>
+                    <h:outputLabel class="wr"  value="Payment are made at the pickup point or transfered to the company account"/>
+               <br/><br/> <hr/><br/>
+               </div>
+               </td>
+		     </tr>
+		     
+		     
+		    
+            
+		
+		</table>
+		
+		     
+		     <h:form>
+                  <div   class="input_log">
+                 
+                      <br/>
+                      
+                    
+                      <h:outputLabel class="wr" value="Order  Box"/>
+                        <br/> <br/> <br/>
+                     <h:inputText  id="qx1"    class="intaks"    value="#{order_02.fullname}"   autocomplete="off">
+                         <f:passThroughAttribute name="placeholder"  value="Name"/>
+                     </h:inputText>
+                     
+                      <br/>
+                      <h:inputText      class="intaks"  value="#{order_02.location}"   autocomplete="off">
+                            <f:passThroughAttribute name="placeholder"  value="Location"/>
+                     </h:inputText>
+                     
+                     <br/>
+                     <h:inputText       class="intaks"   value="#{order_02.number}"   autocomplete="off">
+                            <f:passThroughAttribute name="placeholder"  value="Location Phone no:"/>
+                     </h:inputText>
+                     
+                          <br/>
+                      <h:inputText      class="intaks"   value="#{order_02.destination}"   autocomplete="off">
+                            <f:passThroughAttribute name="placeholder"  value="Distination"/>
+                     </h:inputText>
+                     
+                      <br/>
+                      <h:inputText      class="intaks"   value="#{order_02.number1}"   autocomplete="off">
+                            <f:passThroughAttribute name="placeholder"  value="Destination Phone no:"/>
+                     </h:inputText>
+                           
+                     <br/>
+                     
+                     
+                     <div class="container">
+                      
+                       	<div class="card">
+		                <div class="card-content">
+		                    <h2></h2> 
+		                     
+                        <p:commandButton  id="kx"  value="Send"  class="clso"    update="@all" 
+                        action="#{order_02.logistics}">
+                            <f:param  name="order_veiw"   value="delivery"/>
+                       </p:commandButton >
+                       
+                       </div>
+                       </div>
+                      </div>  
+                       
+               
+                  </div>
+                  </h:form>
+          
+		
+	</div>
+	
+	</h:body>
+
+</html>

@@ -1,0 +1,1269 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+	
+    <h:head>
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="logistics, Tutoring, laundry, Construction"/>
+    
+      <meta charset="UTF-8"></meta>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Monclaris Logistics Limited</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+         <link href="css/bootstrap-theme.min.css" rel="stylesheet"/>
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+           crossorigin="anonymous"/>
+           
+           
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+ <script   type="text/javascript" src="js/jquery-1.8.3.js"/>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"/>
+     <script src="js/jquery-2.1.1.min.js"/>
+     
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+     <script src="js/bootstrap.min.js"></script>
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"/>
+    
+   
+   
+   
+   
+         <!--Sweet alert-->
+       <script  type="text/javascript"  src="folder1/bootstrap.js"/>
+        <script  type="text/javascript"  src="folder1/bootstrap.min.js"/>     
+        <script src="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.css"/>
+        
+        
+        
+               
+ <script>
+ function openmenu(){
+	 $(".pop_up").slideDown('fadein'); 
+       document.getElementById("menu-btn").style.display="none";
+         document.getElementById("close-btn").style.display="block";
+     
+ } 
+   function closeme(){
+	   $(".pop_up").slideUp('fadeout'); 
+       document.getElementById("menu-btn").style.display="block";
+         document.getElementById("close-btn").style.display="none";
+     
+ }
+   
+   
+   function popings() {
+       $(".bcbcbcb").fadeIn('slow');
+
+    }
+
+   
+   function  clupb(){
+       $('.bcbcbcb').fadeOut('fast');
+  }
+  
+	 function question() {
+		   $('#info_bot').fadeIn('fast');
+	}
+		 
+function clsing() {
+  $('#info_bot').fadeOut('fast');
+  
+  
+  
+}
+ 
+</script> 
+<style>
+
+
+	*{
+	padding: 0px;
+	margin: 0px;
+ 	box-sizing: border-box;
+	}
+
+
+		.hid{
+		width: 100%;
+		overflow-y: hidden;
+		}	
+
+
+         
+          .contactDev{
+           
+            width:100%;
+           margin-top: 300px;
+           display: block;
+           text-align: center;
+           align-content: center;
+                }
+                
+           .contactP{
+
+		    width: 400px;
+		    height:200px;
+		    border:0px;
+		    text-align:left;
+		    margin:30px;
+		    background: #E4E4E4;
+		    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+		    padding: 30px;
+		    display: inline-block;
+		    }
+    
+    		 
+           .contactImage{
+	        width: 200px;
+	        height:230px;
+	        margin:30px;
+	       display: inline-block;
+	        }
+      
+           #info_bot{
+            position:fixed;
+            display:none;
+            float: left;
+            height: 120px;
+            width: 22%;
+            margin-left:78%;  
+            margin-top:25%;
+            background: #D6D6D6;
+            border-radius: 10px;
+            }
+            .faces{
+            padding:10px;
+            width: 60px;
+            z-index:4;
+            height: 60px;
+            }
+            
+            .wr{
+            float:right;
+            padding:5px;
+            font-size: 15px;
+            }
+            
+            
+      .slide1{
+                width: 100%;
+                height: 100vh;
+                align-items: center;
+                text-align: center;     
+            }
+            .slide1{
+                background-image: url("Images/se.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+           
+            }
+         
+          
+          
+          .wat_body{
+		position:fixed;
+		 float: left;  
+		 margin-left:90%;  
+		 margin-top: 40%;
+		 z-index: 10;
+		}
+
+
+    .bcbcbcb{
+               display: none;
+               background-color: #fff;
+               border-radius: 10px;
+               width: 50%;
+               height: 550px;
+               padding: 10px;
+               margin: 0 auto;
+                z-index: 2px;
+               box-shadow:  10px 10px 10px rgba(1,1,1,1.0);
+               
+           }
+
+
+                    .input_details{
+                    float: left;
+                    width:50%;
+                    height: 350px;
+                    }
+
+                    .input_log{
+                    float: right;
+                    width:50%;
+                    height: 350px;
+
+                    }
+				
+				
+                .intaks{
+               
+               width: 55%;
+               height: 40px;
+               background: #ccccff;
+               border-radius: 5px;
+               margin: 10px;
+               padding: 5px;
+               border:none;
+               max-width: 55%;
+               max-height: 40px;
+            }
+            
+            
+                .intak1{
+               
+               width: 80%;
+               height: 120px;
+               background: #ccccff;
+               border-radius: 10px;
+               margin: 10px;
+               padding: 5px;
+               border:none;
+               max-width: 80%;
+               max-height: 120px;
+            }
+            
+           .clso{
+               float: right;
+               margin-top: 20px;
+               margin-right: 10px;
+               padding: 12px;
+               border-radius: 5px;
+               border:none;
+               background: #ccccff;
+           }
+           
+                .os{
+               float: right;
+               margin-top: 10px;
+               margin-right: 10px;
+               padding: 5px;
+               border-radius: 5px;
+               border:none;
+               background: red;
+               color:#fff;
+           }
+             
+    
+          
+           
+              .slider{
+            width: 100%;
+               
+            }
+            .card{
+           margin-top:20px;
+            width: 100%;
+            height: 25vh;
+            background-color: #fff;
+            
+            }
+
+          .card-content{
+         width: 80%;
+         height: 60px;
+         border-radius:0px 0px 0px 30px;
+         background-color: #2B2B2B; 
+         display: flex;
+         float: right;
+         }
+       
+           .nav{
+         float: left;
+         } 
+  
+          #menu-btn, #close-btn{
+           font-size: 25px;
+            margin: 10px;
+            color: #ffffff;
+            cursor:pointer;
+            display: none;
+         
+        }
+        
+        .contacttext1{
+        display: none;
+        }
+             .pop_up{
+        	display:none ;
+            	background-color:#251A44;
+          	height: 520px;
+          	width: 100%;
+          }
+
+            .contact{
+         font-size:12px;
+         padding: 3px;
+         color: #fff;
+        
+         }   
+         .card-content2{
+         margin-top: 10px;
+         }
+         
+         .nav-item{
+         list-style: none;
+         color: #CFCFCF;
+         text-transform:uppercase;
+         font-weight:600;
+         font-family:Sitka Small;
+         justify-content: space-between;
+         }
+         .linkin{
+         margin: 10px;
+         font-family:  Sitka Small;
+         font-family:Sitka Small;
+         }
+         .lin{
+         font-size: 20px;
+         font-family:Sitka Small;
+         color: #fff;
+         }
+         .linki{
+         margin: 15px;
+         font-family:Sitka Small;
+         }
+         .btn1{
+         height: 40px;
+         font-family:Sitka Small;
+         width:200px;
+         border-radius: 7px;
+         }
+         .btn2{
+         width: 100px;
+         font-family:Sitka Small;
+         height:30px;
+         border-radius: 5px;
+         }
+         
+          ul,
+          li{
+         text-decoration: none; 
+         display: inline-flex; 
+         }
+         
+    .navigation{
+    width: 80%;
+    height:50px;
+    position:relative;
+    margin-top:-20px;
+      float: right;
+      align-items: center;
+      align-content: center;
+   display: flex;
+    }
+   .link{
+         text-transform:uppercase;
+         font-weight:600;
+         font-family:Lucida Fax;
+         justify-content: space-between;
+         color:#000;
+         padding-left:5px;
+         font-size:12px;
+         text-decoration:none;
+        margin-left: 28px;   
+    }
+    
+    .btn{
+    margin-left: 40px;
+    border-radius: 0px 10px  0px 10px;
+    font-family: sans-serif;
+     transition:1.5s;
+    background-color: red;
+    }
+    .btn:hover{
+    background-color: transparent;
+    border: red;
+   height: 40px;
+   transition:1.5s;
+    }
+
+          h1{
+    font-size:50px;
+    color: #FCD409;
+    font-weight: 600;
+    font-family:Sitka Small;
+    text-transform:uppercase;
+    justify-content:space-between;
+    padding-top: 100px;
+    }
+    h3{
+    font-size:30px;
+    color: #fff;
+    font-weight: 600;
+    font-family:Sitka Small;
+    text-transform:uppercase;
+    justify-content:space-between;
+    padding-top: 100px;
+    }
+        .pp1{
+    color:#fff;
+    font-weight: 400;
+    justify-content: space-around;
+    font-size: 20px;
+    padding:10px;
+    font-family: Times New Roma;
+    }
+       .input{
+    width: 400px;
+    height: 50px;
+    border: 2px dashed #fff;
+    color:white; 
+     padding:5px;
+    background-color: black;
+    }
+    .track{
+    width: 200px;
+    height:50px;
+    background-color: #A51313;
+    color: #fff;
+    font-family:Sitka Small;
+    margin-top:  -100px;
+    font-size:15px;
+    border:0px;
+    border-radius:10px;
+    margin-left: 5px;
+    transition:1s;
+    }
+    .track:hover{
+    background-color: #ffffff;
+    color:#0E056D;
+    border:1px solid red;
+    transition:1s;
+ 
+    }
+
+  
+          
+          
+         
+        
+    
+         .feature{
+            width: 100%;
+            justify-content: center;
+            padding: 30px;
+            margin-top: 50px;
+            position: absolute;
+        }
+        .card1{
+            width: 100%; 
+            height: 215px;
+            background: #fff;
+            padding: 20px 15px;
+            transition: 0.3s ease-in-out;
+        }
+       .card1:hover{
+            height: 360px;
+        }
+          .imgB{
+           
+            width: 100%;
+            height: 260px;
+            top: -40px;
+            left: 0px;
+            z-index: 1;
+        }
+      .imgB img{
+            max-width: 100%;
+            border-radius: 4px; 
+        }
+        .content{
+        
+            margin-top: -50px;
+            padding: 10px 15px;
+            text-align: center;
+            color: #111;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+        }
+     .card1:hover .content{
+            visibility: visible;
+            opacity: 1;
+            margin-top: -50px;
+            transition-delay: 0.3s; 
+        }
+        
+        
+        
+        
+          
+          
+          
+          
+          
+            
+          .aboutus{
+          width: 100%;
+          display: flex;
+          margin-top: 100px;  
+  
+          }
+           .about1{
+          width: 33%;
+          height: 500px;
+          background-color: #1C1E29;
+          align-content: center;
+          text-align: center;
+          align-items: center;
+          display: inline-block;
+          box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+          }
+
+            .about1 img{
+          border-radius: 100%;
+          width: 150px;
+          margin-top:20px;
+          height: 140px;
+          }
+
+        .aboutContent{
+           display: inline-block;
+         width:100%;
+         height: 200px;
+         padding: 30px;
+         box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+         }
+            .quality{
+          margin-top:-40px;
+          text-transform:uppercase;
+          font-family: sans-serif;
+          }
+          .menquality{
+           margin-top:-80px;
+          text-transform:uppercase;
+          font-family: sans-serif;
+          }
+         .aboutP{
+         color: #E2E2E2;
+         font-size: 16px;
+         }
+         
+             .men1{
+          width: 33%;
+          display: inline-block;
+          height: 500px;
+          background-color: #1DACC2  ;  
+          align-content: center;
+          text-align: center;    
+          align-items: center;
+          box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+          }
+           .menContent{
+        width:100%;
+         display: inline-block;
+         height: 200px;
+         padding: 30px;
+         box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+         }
+      .men1 img{  
+          width: 100%;
+          height: 200px;
+          }
+           .people1{
+          width: 33%;
+          display: inline-block;
+          height: 500px;
+          background-color: #EE0038 ;  
+          align-content: center;
+          text-align: center;
+          align-items: center;
+          box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+          }
+          .people1Content{
+     width:100%;
+         display: inline-block;
+         height: 200px;
+         padding: 30px;
+         box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+         }
+       .people1 img{
+          border-radius: 100%;
+          width: 150px;
+          margin-top:20px;
+          height: 140px;
+
+          }
+
+          
+          
+               .footer{
+        
+        height: fit-content;
+         width: 100%;
+        background-color: #060214;
+        color:#6B6978;
+     
+     }
+     .footAddress{
+     font-size: 16px;
+     }
+     .footCom{
+     font-size: 16px;
+     }
+      .footDev{
+     font-size: 16px;
+     }
+      .footsocial{
+     font-size: 16px;
+     }
+     
+     
+     
+     
+     h2{
+     color: #ffffff;
+     }
+     .footer ul li{
+        color: #D8D1D1;
+     }
+     .fa-whatsapp{
+     color: green;
+     }
+     .fa-facebook-official{
+     color: blue;
+     }
+     .fa-envelope-o{
+     color: red;
+     }
+     .fa-instagram{
+     color: red;
+     }
+     i{
+     margin: 5px;
+     }
+   
+
+   
+     @media(max-width:980px){
+     h1{
+     margin-top: -50px;
+     }
+     
+         .wat_body{
+		 
+		 margin-left:83%;  
+		 margin-top: 147%;
+	
+		}
+		
+		
+    .bcbcbcb{
+               display: none;
+               width: 100%;
+               height: 800px;
+               
+           }
+		
+		  
+            .input_details{
+             margin-left:auto;
+             margin-right:auto;
+             overflow:scroll;
+             width:100%;
+             height: 550px;
+             }
+          
+          .intakes{
+          width: 100%;
+          	
+          	}
+		
+		 .input_log{
+             margin-left:auto;
+             margin-left:auto;
+             width:100%;
+             height: 350px;
+             margin-top: -200px;
+
+             }
+		
+		
+		
+ 
+        .card{
+        display: none;
+            
+           }
+            #menu-btn{
+            display: block;
+            }
+            
+            
+       .input{
+		width: 300px;
+    }
+          
+          
+          .card1{
+         margin-top: 30px;
+         height: 300px;
+        }
+      
+        .content{
+        
+            margin-top: -100px;
+            visibility: visible;
+            opacity: 2;
+            transition: none;
+        }
+     .card1:hover .content{
+            visibility: visible;
+            opacity: 1;
+            margin-top: 0;
+            transition-delay: none; 
+        }
+        
+        
+       
+ 
+        
+        
+        
+        
+        .contactDev{
+           
+           margin-top: 1100px;
+       
+                }
+               .contactP{
+		    margin:5px;
+		    width: 350px;
+		   
+		    } 
+           .contactImage img{
+	     margin: 5px;
+	     width: 280px;
+	        }
+     .aboutus{
+     display: block;
+     }
+      .about1{
+          width: 100%;
+          }
+          .men1{
+          width: 100%;
+          }
+          .people1{
+          width: 100%;
+          }
+          
+        
+        
+     }
+
+       
+            
+                    
+</style>
+
+</h:head>
+
+    
+    
+<h:body style="background-color: #EFEFEF;">
+    
+   
+<script>
+AOS.init({duration:1000});
+</script>
+<div class="hid">
+<div class="body">
+
+    <div  id="info_bot">
+						                
+		  <img src="Images/ssss.png"   class="faces"/>
+		                <br/>
+		   <p:outputLabel class="wr"  value="Good day How can we help You ?"/>                    
+   </div>
+						              
+						              
+
+       <div class="slide1">
+            
+            
+         <div   class="bcbcbcb">
+               <p:outputLabel  value="Delivery even faster Here are a few tips to guide You"/>
+               <br/> <br/>
+               <div   class="input_details" >
+               <p:outputLabel  value="Step 1 :"/>
+               <p:outputLabel  value="When placing your order, always give detailed delivery address to avoid complication."/>
+                 <hr/><br/>
+                 
+                  <p:outputLabel  value="Step 2 :"/>
+                  <p:outputLabel  value="Make Sure your parcel is  well packed, labeled with the address and phone number of the delivery point."/>
+                  <hr/><br/>
+                   <p:outputLabel  value="Step 3 :"/>
+                    <p:outputLabel  value="Payment are made at the pickup point or transfered to the company account"/>
+               
+               </div>
+                  <div   class="input_log">
+                  <h:form  > 
+                      <br/>
+                      <h:commandButton  id="xc"  value="X"    class="os"  onclick="clupb()">
+                        <f:ajax  execute="xc"   render="@this"/>
+                      </h:commandButton>
+                    
+                      <p:outputLabel  value="Order  Box"/>
+                        <br/> <br/> <br/>
+                     <h:inputText  id="qx1"    class="intaks"    value="#{order.fullname}"   autocomplete="off">
+                         <f:passThroughAttribute name="placeholder"  value="Name"/>
+                     </h:inputText>
+                     
+                      <br/>
+                      <h:inputText      class="intaks"  value="#{order.location}"   autocomplete="off">
+                            <f:passThroughAttribute name="placeholder"  value="Location"/>
+                     </h:inputText>
+                     
+                     <br/>
+                     <h:inputText       class="intaks"   value="#{order.number}"   autocomplete="off">
+                            <f:passThroughAttribute name="placeholder"  value="Location Phone no:"/>
+                     </h:inputText>
+                     
+                          <br/>
+                      <h:inputText      class="intaks"   value="#{order.destination}"   autocomplete="off">
+                            <f:passThroughAttribute name="placeholder"  value="Distination"/>
+                     </h:inputText>
+                     
+                      <br/>
+                      <h:inputText      class="intaks"   value="#{order.number1}"   autocomplete="off">
+                            <f:passThroughAttribute name="placeholder"  value="Destination Phone no:"/>
+                     </h:inputText>
+                           
+                     <br/>
+                     
+                     	
+                        <h:commandButton  id="kx"  value="Send"  class="clso"   
+                         onclick="clupb()"   action="#{order.logistics}">
+                            <f:param  name="order_veiw"   value="delivery"/>
+                            <f:param  name="n1"  value="${log_user}"/>
+                      		<f:param  name="z1"  value="${Payed}"/>
+                       </h:commandButton >
+                       <div class="container">
+                       </div>
+                       
+                </h:form>  
+                  </div>
+            </div>
+            
+            
+            
+              <h:form>
+			     <div   class="wat_body"     onmouseover="question()"    onmouseout="clsing()">
+			        <p:link  href="https://api.whatsapp.com/send?phone=+2348165248629"  >
+			         <img   src="Images/whatsapp.png"  class="wat_icons"/>
+			         </p:link>
+			         </div>
+			     
+			</h:form>
+
+
+ <div  class="pop_up"  id="pop_up">
+				 
+						  
+						 
+        <div class="Rlider">
+        <center>
+      <img src="Images/logo2.png" class="log" />
+       <div class="card-content2"  id="card-content2"> 
+      <div class="contact">
+                <p:outputLabel class="nav-item" >Call:(+234-813-202-7585,  +234-803-319-5639)</p:outputLabel></div> 
+              <div class="contact">  <p:outputLabel class="nav-item" >     Email: monclariscommunication@gmail.com</p:outputLabel>
+        </div>
+            <div class="contact"> <p:outputLabel class="nav-item" >  Mon-Sat 8am-8pm</p:outputLabel></div>
+
+   </div> </center> 
+						             
+ <h:form>    
+     <div class="navigate" id="navigate">  
+       <div class="linkin">    
+  
+           <h:commandLink value="Tutor's" class="lin" 
+           action="#{nav.nav8}">
+               <f:param  name="n1"  value="${log_user}"/>
+           </h:commandLink>
+           </div>
+           
+           <div class="linkin">
+               <h:commandLink value="Laundry" class="lin" 
+               action="#{nav.nav2()}">
+               <f:param  name="n1"  value="${log_user}"/>
+               </h:commandLink>
+               </div>
+               
+                <div class="linkin"> 
+                   <h:commandLink value="Construction" class="lin"  action="#{nav.nav3()}">
+                   <f:param  name="n1"  value="${log_user}"/>
+                   </h:commandLink>
+                 </div>
+                 
+                 
+                  <div class="linkin">  
+	                  <h:commandLink value="About Us " class="lin" action="#{nav.nav5()}">
+	                  <f:param  name="n1"  value="${log_user}"/>
+	                  </h:commandLink>
+                  </div>
+                  
+                  
+                   <div class="linki"> 
+                      <h:commandButton  id="sd" style="color:#fff;" value="Place Order"  class="btn2 btn-primary" 
+                       action="#{nav.mobile}">
+                        <f:param  name="n1"  value="${log_user}"/>
+                      </h:commandButton>
+                    </div>
+                    
+                    
+                      <div class="linki">
+                      <h:commandButton value="Sign In" class="btn2 btn-primary"    action="#{school_bean.sign_in1}">
+                        <f:param  name="fds"   value="index"/>
+                      </h:commandButton>
+                      </div>
+                      
+                  <div class="linki">
+                      <h:commandButton value="Become a Delivery Partner "  class="btn1  btn-danger "    action="#{school_bean.reg()}">
+                          <f:param  name="DP"   value="Delivery Partner"/>
+                      </h:commandButton>
+                  </div>
+                  
+                    
+         
+             </div>
+        </h:form>     
+						      
+                    </div>
+						         
+				            
+                </div>
+              <div class="nav">
+                <i class="fa fa-bars"  id="menu-btn"  onclick="openmenu()"/>
+                <i class="fa fa-times"  id="close-btn"  onclick="closeme()"/>
+                </div>
+   <div class="container">
+   <div class="card">
+    <img src="Images/logo2.png" />
+               <div class="card-content"  id="card-content"> 
+             <ul><div class="contact">
+             <li class="nav-item" >Call:(+234-813-202-7585, &nbsp; &nbsp; +234-803-319-5639)</li></div> 
+      <div class="contact">  <li class="nav-item" > Email: monclariscommunication@gmail.com</li></div>
+          <div class="contact">   <li class="nav-item" > Mon-Sat: 8am-8pm</li></div>
+           </ul>
+          
+               </div>  
+               
+            
+            
+             <h:form>  
+             <div class="navigation" id="navigation"> 
+             
+               
+              <div class="linking">    
+                  <h:commandLink value="Tutor's" class="link" action="#{nav.nav8()}">
+                  <f:param  name="n1"  value="${log_user}"/>
+                  </h:commandLink>
+              </div>
+              
+              
+              
+                  <div class="linking">    
+	                   <h:commandLink value="Laundry" id="lis" class="link" action="#{nav.nav2()}">
+	                    <f:param  name="n1"  value="${log_user}"/>
+	                  </h:commandLink>
+                   </div>
+                   
+                   
+                   
+                  <div class="linking">  
+	                   <h:commandLink value="Construction" class="link" action="#{nav.nav3()}">
+	                  		  <f:param  name="n1"  value="${log_user}"/>
+	                  </h:commandLink>
+                  </div>
+                  
+                  
+                  
+                  <div class="linking"> 
+                   
+                      <h:commandLink value="About Us" class="link" 
+                      action="#{nav.nav5()}">
+                  			  <f:param  name="n1"  value="${log_user}"/>
+                 	   </h:commandLink>
+                      
+                  </div>
+                   
+                   
+                   <div class="linking"> 
+                       
+                      <h:commandButton  id="ed"  style="color:#fff;" value="Place Order"   
+	                      class="link btn btn-primary"  onclick="popings()">
+	                      <f:ajax   execute="ed"   render="@this"/>
+                      </h:commandButton>
+                   
+                    </div>
+                      
+                      
+                      
+                  <div class="linking"> 
+                   <h:commandButton value="Become a Delivery Partner "   action="#{school_bean.reg()}"  class="btn btn-danger ">
+                  	<f:param  name="DP"     value="Delivery Partner"/>
+                  </h:commandButton>
+                       </div>  
+                       
+                       
+                     <h:commandButton value="Sign In" class="btn btn-primary" action="#{school_bean.sign_in1}">
+                      <f:param  name="fds"   value="index"/>
+                      </h:commandButton>
+                     </div>
+                    </h:form> 
+
+   </div>
+   </div>
+      <h1 class="section-headinng mb-3">We Are Here For You</h1>   
+         <p  class="pp1" >At Monclaris Nigeria Limited we are dedicated to providing quality services,
+         Efficiency and Trust is our watch word.</p>
+           <h:form>
+           
+               <h:inputText value="#{goods_Tracker.bike_no}"  class="input"    autocomplete="off">
+             <f:passThroughAttribute name="placeholder"  value="Enter WayBill Number"/>
+         </h:inputText>
+				
+			   <div class="container">
+						
+					<h3></h3>
+           			<h:commandButton value="Track" class="track"
+           			 action="#{goods_Tracker.process_input}"> 
+		                   <f:param  name="n1"  value="${log_user}"/>
+		             </h:commandButton>
+        						
+			   	</div>
+			   	
+			   	
+		 </h:form>
+         
+         <div class="feature">
+                 <div class="container">
+                     <h:form>
+                        
+                                <div class="  col-md-4  col-sm-12">
+                                <div class="card1">
+                                    <div class="imgB"  data-aos="flip-up">
+                                     <h:commandLink action="#{nav.monLaudry}">
+                                        <img src="Images/drycleaning.jpg" alt=""/>
+                                         <f:param  name="n1"  value="${log_user}"/>
+                                        </h:commandLink>
+                                    </div>
+                                    <div class="content">
+                                        <h4>Dry Cleaning</h4>
+                                        <p>Monclaris Offer Exquisite Dry cleaning Services  with home delivery  </p>
+                                    </div> 
+                                   </div></div>
+
+                         
+                    
+                                <div class=" col-md-4  col-sm-12" >
+                                <div class="card1">
+                                    <div class="imgB"   data-aos="flip-up">
+                                     <h:commandLink action="#{nav.monSchool}">
+                                        <img src="Images/School1.jpg" alt=""/>
+                                         <f:param  name="n1"  value="${log_user}"/>
+                                        </h:commandLink>
+                                    </div>
+                                    <div class="content">
+                                        <h4>Tutors</h4>
+                                        <p>Monclaris Tutors offer Training in IT in the aspect of   programming </p>
+                                    </div>
+                                    </div> 
+                                </div>
+                  
+                       
+                
+                        <div class=" col-md-4  col-sm-12" >
+                        <div class="card1">
+                            <div class="imgB"   data-aos="flip-up">
+                             <h:commandLink action="#{nav.monConstruct}">
+                                <img src="Images/construct.jpg" alt=""/>
+                                  <f:param  name="n1"  value="${log_user}"/>
+                                </h:commandLink>
+                            </div>
+                            <div class="content">
+                                <h4>Construction</h4>
+                                <p>We are also into Construction  of  building and  Dredging </p>
+                            </div>
+                             </div>  
+                       </div>
+           
+          </h:form>  
+                 </div>
+        </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+          <div class="contactDev">
+          
+      		 <div  class="contactP"  data-aos="flip-up">
+		           <p:outputLabel  
+		             value="If you have any question about Monclaris  Logistics (MOL) 
+		             or how we can support your business, please contact us            
+		                 directly..  give us a call at +234-813-202-7585"/>
+             </div>
+             
+	        <div class="contactImage" data-aos="flip-up">
+	        <img src="Images/deliveryCall.png" />
+	        </div>
+	        
+	        </div>
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+        
+        <div class="aboutus">
+       <div class="about1" data-aos="flip-left">
+       <img src="Images/monclaris.jpg" class="aboutImage"/>
+       <h3 class="quality">Quality</h3>
+       <div class="aboutContent">
+       <p class="aboutP">A core value in our company, we believe in rendering Quality Service
+       to our customers which is why we have a Quality Management system to ensure
+        efficiently consistent levels of high standard quality service at all times. </p>
+       </div>
+       </div>
+              <div class="men1" data-aos="flip-up">
+       <img src="Images/monclaris3.jpg" class="menImage"/>
+       <h3 class="menquality">Team</h3>
+       <div class="menContent">
+       <p class="aboutP">Teamwork is the ability to work together toward a common vision
+       The ability to direct individual accomplishments toward organizational objectives. It is the fuel that allows
+       common people to attain uncommon results. </p>
+       </div>
+       </div>
+              <div class="people1" data-aos="flip-righ">
+       <img src="Images/moclaris2.jpg" class="people1Image"/>
+       <h3 class="quality">People</h3>
+       <div class="people1Content">
+       <p class="aboutP">At Monclaris, We believe that team work and 
+       responsibility are very key in maintaining excellent customer services which is
+       why our Human Resources Initiatives are designed to attract expertise while
+       continuously grooming them to develop and excel in their chosen career paths. </p>
+       </div>
+       </div>
+       </div>
+         <div class="footer">
+       <div class="container">
+       <div class="row">
+       <div class="col-md-3 col-sm-12" data-aos="fade-up">
+       <h2>Address</h2>
+       <div class="footAddress">
+       <ul>
+       <li>Adeyinka str,Opp-water<br/> Corporation,Agodo-Egbe</li>
+       </ul>     
+       </div>
+              <div class="footAddress">
+       <ul>
+       <li>Adeyinka str,Opp-water<br/> Corporation,Agodo-Egbe</li>
+       </ul>     
+       </div>
+              <div class="footAddress">
+       <ul>
+       <li>Adeyinka str,Opp-water<br/> Corporation,Agodo-Egbe</li>
+       </ul>     
+       </div>
+       </div>
+              <div class="col-md-3 col-sm-12" data-aos="fade-up">
+       <h2>Contact Us</h2>
+       <div class="footCom">
+       <ul>
+       <li>NO: + 2348-132-027-585</li>
+       </ul>     
+       </div>
+              <div class="footCom">
+       <ul>
+       <li>NO: +2348-033-195-639</li>
+       </ul>     
+       </div>
+          <div class="footCom">
+       <ul>
+       <li>monclarisCommunication@gmail.com</li>
+       </ul>     
+       </div>
+       </div>
+              <div class="col-md-3 col-sm-12" data-aos="fade-up">
+       <h2>Developer</h2>
+       <div class="footDev">
+       <ul>
+       <li>FRTOscripting</li>
+       </ul>     
+       </div>
+              <div class="footDev">
+       <ul>
+       <li>+234-9078-425-219</li>
+        <br/>
+        <li>
+        +234-8172-670-871</li>
+       </ul>     
+       </div>
+       
+              <div class="footDev">
+       <ul>
+       <li>FRTOscripting@Gmail.com</li>
+       </ul>     
+       </div>
+       </div>
+   
+        <div class="col-md-3 col-sm-12" data-aos="fade-up">
+       <h2>Follow Us On</h2>
+       <div class="footsocial">
+       <ul>
+       <li><i class="fa fa-facebook-official"></i>monclarislogistics</li>
+       </ul>     
+       </div>
+              <div class="footsocial">
+       <ul>
+       <li><i class="fa fa-envelope-o"></i>monclariscommunication@gmail.com</li>
+       </ul>     
+       </div>
+              <div class="footsocial">
+       <ul>
+      <li><i class="fa fa-whatsapp"></i>+2348165248629</li>
+       </ul>     
+       </div>
+                 <div class="footsocial">
+       <ul>
+       <li><i class="fa fa-instagram"></i>monclarislogistics</li>
+       </ul>     
+       </div>
+       </div>
+       </div>
+       </div>
+       
+       </div>    
+       </div>
+       
+     
+</h:body>
+</html>
+
+

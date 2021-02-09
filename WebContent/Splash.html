@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      
+<title>Insert title here</title>
+
+   
+<style>
+
+ .welcome-section{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top:0;
+            left: 0;
+            background-color: #000;
+            overflow: hidden;	
+            }
+
+
+            .welcome-section  .content-wrap{
+            position: absolute;
+            left:50%;
+            top:50%;
+            transform: translated3d(-50%, -50%, 0);
+            }
+		
+		
+		
+            .welcome-section   .content-wrap  .fly-in-text{
+                    list-style: none;
+            }
+
+                    .welcome-section   .content-wrap  .fly-in-text  span{
+                    font-size: 5em;
+                     color: yellow;
+                    opacity: 1;
+                    transition: all  2s ease;
+            }
+		
+            .welcome-section   .content-wrap  .fly-in-text  span:last-child{
+                text-align: center;
+            }
+            
+            
+            .welcome-section   .content-wrap  .enter-button{
+            
+            display: block;
+            text-align: center;
+            font-size: 1em;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: yellow;
+            opacity: 1;
+            transition: all 1s ease 2s;
+            }
+            
+            
+            
+            .welcome-section.content-hidden  .content-wrap  .fly-in-text span {opacity: 0;}
+            .welcome-section.content-hidden  .content-wrap  .fly-in-text  span:nth-child(1) {transform: translated3d(-100px, 0,0);}
+            .welcome-section.content-hidden  .content-wrap  .fly-in-text  span:nth-child(2){ transform:  translated3d(100px, 0, 0);} 
+            .welcome-section.content-hidden  .content-wrap  .enter-button {opacity: 0; transform: translated3d(0, -30px, 0);}
+                
+                
+                @media(min-width: 800px){
+                 .welcome-section.content-hidden  .content-wrap  .fly-in-text span {font-size: 10em;}     
+                .welcome-section.content-hidden  .content-wrap  .center-button  {font-size: 1.5em;}     
+                 
+               }
+
+</style>
+
+
+
+<script>
+
+$(function (){
+    
+    var welcomeSection = $('.welcome-section'),
+    enterbutton = welcomeSection.find('enter-button');
+    
+    setTimeout(function (){
+        welcomeSection.removeClass('.content-hidden');
+    }, 2000);
+    
+    
+    enterbutton.on('click', function (e){
+       
+        welcomeSection.addClass('.content-hidden').fadeOut();
+    });
+})();
+</script>
+</head>
+<body>
+<div   class="welcome-section content-hidden">
+	<div   class="content-wrap">
+
+            <span  class="fly-in-text">
+                <span>Monclaris</span>	
+                <span>Logistics</span>
+                </span>	
+            <a  href="index.xhtml"  class="center-button"    style="color: yellow;">Get Started</a>
+	</div>
+</div>
+</body>
+</html>
